@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { buildComponentAuditPrompt } from "./prompts/audit-component.prompt.ts";
-import { collectComponentContext, projectRoot } from "./component-context.ts";
+import { collectComponentContext, parseCollectOptions, projectRoot } from "./component-context.ts";
 import { executeLoggedCodexRun } from "./codex-run-log.ts";
 
 function run(): void {
@@ -14,7 +14,7 @@ function run(): void {
     process.exit(1);
   }
 
-  const context = collectComponentContext(componentTag);
+  const context = collectComponentContext(componentTag, parseCollectOptions(process.argv.slice(3)));
   const contextJson = JSON.stringify(context, null, 2);
   const prompt = buildComponentAuditPrompt(contextJson);
 

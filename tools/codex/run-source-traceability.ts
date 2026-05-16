@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { collectComponentContext, projectRoot } from "./component-context.ts";
+import { collectComponentContext, parseCollectOptions, projectRoot } from "./component-context.ts";
 import { executeLoggedCodexRun } from "./codex-run-log.ts";
 import { buildSourceTraceabilityPrompt } from "./prompts/source-traceability.prompt.ts";
 
@@ -14,7 +14,10 @@ function run(): void {
     process.exit(1);
   }
 
-  const context = collectComponentContext(componentTag);
+  const context = collectComponentContext(
+    componentTag,
+    parseCollectOptions(process.argv.slice(3), { fullSources: true }),
+  );
   const contextJson = JSON.stringify(context, null, 2);
   const prompt = buildSourceTraceabilityPrompt(contextJson);
 

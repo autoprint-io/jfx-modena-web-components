@@ -25,6 +25,13 @@ export interface ComponentFilePaths {
   accessibilityTest: string | null;
 }
 
+export interface SourceContextMetadata {
+  maxSourceChars: number | null;
+  fullSources: boolean;
+  truncatedSourceCount: number;
+  totalSourceChars: number;
+}
+
 export interface ComponentCodexContext {
   component: string;
   profile: ComponentProfile;
@@ -37,12 +44,48 @@ export interface ComponentCodexContext {
   styles: string | null;
   unitTest: string | null;
   accessibilityTest: string | null;
+  sourceContext: SourceContextMetadata;
   sourceExcerpts: SourceExcerpt[];
   recommendedVerificationCommands: string[];
 }
 
-interface CollectOptions {
+export interface CollectOptions {
   maxSourceChars?: number;
+  fullSources?: boolean;
+}
+
+export function parseCollectOptions(argv: string[], defaultOptions: CollectOptions = {}): CollectOptions {
+  const options: CollectOptions = { ...defaultOptions };
+
+  for (let index = 0; index < argv.length; index += 1) {
+    const arg = argv[index];
+
+    if (arg === "--full-sources") {
+      options.fullSources = true;
+    } else if (arg === "--max-source-chars") {
+      const value = argv[index + 1];
+      if (!value) {
+        throw new Error("--max-source-chars requires a numeric value.");
+      }
+
+      const maxSourceChars = Number.parseInt(value, 10);
+      if (!Number.isSafeInteger(maxSourceChars) || maxSourceChars < 1) {
+        throw new Error(`--max-source-chars must be a positive integer: ${value}`);
+      }
+
+      options.maxSourceChars = maxSourceChars;
+      if (!argv.includes("--full-sources")) {
+        options.fullSources = false;
+      }
+      index += 1;
+    } else if (arg === "--print-prompt") {
+      continue;
+    } else if (arg === "--output") {
+      index += 1;
+    }
+  }
+
+  return options;
 }
 
 function readJson(projectPath: string): unknown {
@@ -76,7 +119,8 @@ function sourceList(value: unknown): string[] {
 }
 
 export function collectComponentContext(componentTag: string, options: CollectOptions = {}): ComponentCodexContext {
-  const maxSourceChars = options.maxSourceChars ?? 6000;
+  const fullSources = options.fullSources ?? false;
+  const maxSourceChars = fullSources ? null : options.maxSourceChars ?? 6000;
   const status = readJson("packages/components/src/component-status.json");
 
   if (!isRecord(status) || !Array.isArray(status.components)) {
@@ -110,6 +154,7 @@ export function collectComponentContext(componentTag: string, options: CollectOp
 
   const manifest = readJson(manifestPath);
   const sources = sourcesPath ? readJson(sourcesPath) : {};
+  let totalSourceChars = 0;
   const sourceExcerpts = sourceList(sources).map((sourcePath) => {
     const absoluteSourcePath = path.join(projectRoot, sourcePath);
     if (!fs.existsSync(absoluteSourcePath)) {
@@ -122,13 +167,16 @@ export function collectComponentContext(componentTag: string, options: CollectOp
     }
 
     const content = fs.readFileSync(absoluteSourcePath, "utf8");
+    totalSourceChars += content.length;
+    const truncated = typeof maxSourceChars === "number" && content.length > maxSourceChars;
     return {
       path: sourcePath,
       exists: true,
-      excerpt: content.slice(0, maxSourceChars),
-      truncated: content.length > maxSourceChars,
+      excerpt: truncated ? content.slice(0, maxSourceChars) : content,
+      truncated,
     };
   });
+  const truncatedSourceCount = sourceExcerpts.filter((source) => source.truncated).length;
 
   return {
     component: componentTag,
@@ -142,6 +190,12 @@ export function collectComponentContext(componentTag: string, options: CollectOp
     styles: readText(filePaths.styles),
     unitTest: readText(filePaths.unitTest),
     accessibilityTest: readText(filePaths.accessibilityTest),
+    sourceContext: {
+      maxSourceChars,
+      fullSources,
+      truncatedSourceCount,
+      totalSourceChars,
+    },
     sourceExcerpts,
     recommendedVerificationCommands: [
       `npm run --silent codex:component-context -- ${componentTag}`,
