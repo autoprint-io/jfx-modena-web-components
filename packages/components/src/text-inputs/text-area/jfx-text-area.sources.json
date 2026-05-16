@@ -1,1 +1,10 @@
-{}
+{
+  "tagName": "jfx-text-area",
+  "sources": [
+    "reference-sources/openjfx/controls/TextArea.java",
+    "reference-sources/openjfx/controls/TextInputControl.java",
+    "reference-sources/openjfx/skins/TextAreaSkin.java",
+    "reference-sources/openjfx/skins/TextInputControlSkin.java",
+    "reference-sources/openjfx/skins/Utils.java"
+  ]
+}

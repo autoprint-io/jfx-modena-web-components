@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-16T08:53:12.489Z",
+  "generatedAt": "2026-05-16T09:12:06.771Z",
   "allowlistPath": "tools/clean-source-allowlist.json",
   "normalizedRoot": "reference-inputs/normalized",
   "outputRoot": "reference-sources",
-  "sourceCount": 73,
+  "sourceCount": 78,
   "missingCount": 0,
   "missingSources": []
 }

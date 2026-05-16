@@ -173,7 +173,7 @@
         "unitTest": "packages/components/src/controls/button/jfx-button.test.ts",
         "accessibilityTest": "packages/components/src/controls/button/jfx-button.a11y.test.ts"
       },
-      "sourceCount": 6
+      "sourceCount": 10
     },
     {
       "tagName": "jfx-button-bar",
@@ -224,7 +224,7 @@
         "unitTest": "packages/components/src/controls/checkbox/jfx-checkbox.test.ts",
         "accessibilityTest": "packages/components/src/controls/checkbox/jfx-checkbox.a11y.test.ts"
       },
-      "sourceCount": 7
+      "sourceCount": 10
     },
     {
       "tagName": "jfx-choice-box",
@@ -241,7 +241,7 @@
         "unitTest": "packages/components/src/choices/choice-box/jfx-choice-box.test.ts",
         "accessibilityTest": "packages/components/src/choices/choice-box/jfx-choice-box.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 4
     },
     {
       "tagName": "jfx-circle",
@@ -479,7 +479,7 @@
         "unitTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.test.ts",
         "accessibilityTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.a11y.test.ts"
       },
-      "sourceCount": 7
+      "sourceCount": 9
     },
     {
       "tagName": "jfx-image-view",
@@ -513,7 +513,7 @@
         "unitTest": "packages/components/src/controls/label/jfx-label.test.ts",
         "accessibilityTest": "packages/components/src/controls/label/jfx-label.a11y.test.ts"
       },
-      "sourceCount": 5
+      "sourceCount": 6
     },
     {
       "tagName": "jfx-line",
@@ -666,7 +666,7 @@
         "unitTest": "packages/components/src/controls/pagination/jfx-pagination.test.ts",
         "accessibilityTest": "packages/components/src/controls/pagination/jfx-pagination.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 3
     },
     {
       "tagName": "jfx-pane",
@@ -785,7 +785,7 @@
         "unitTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.test.ts",
         "accessibilityTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.a11y.test.ts"
       },
-      "sourceCount": 6
+      "sourceCount": 7
     },
     {
       "tagName": "jfx-progress-indicator",
@@ -802,7 +802,7 @@
         "unitTest": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.test.ts",
         "accessibilityTest": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 5
     },
     {
       "tagName": "jfx-radio-button",
@@ -819,7 +819,7 @@
         "unitTest": "packages/components/src/controls/radio-button/jfx-radio-button.test.ts",
         "accessibilityTest": "packages/components/src/controls/radio-button/jfx-radio-button.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 8
     },
     {
       "tagName": "jfx-rectangle",
@@ -1244,7 +1244,7 @@
         "unitTest": "packages/components/src/text-inputs/text-area/jfx-text-area.test.ts",
         "accessibilityTest": "packages/components/src/text-inputs/text-area/jfx-text-area.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 5
     },
     {
       "tagName": "jfx-text-field",
@@ -1329,7 +1329,7 @@
         "unitTest": "packages/components/src/controls/toggle-button/jfx-toggle-button.test.ts",
         "accessibilityTest": "packages/components/src/controls/toggle-button/jfx-toggle-button.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 7
     },
     {
       "tagName": "jfx-tool-bar",

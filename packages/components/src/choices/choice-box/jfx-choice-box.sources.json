@@ -1,1 +1,9 @@
-{}
+{
+  "tagName": "jfx-choice-box",
+  "sources": [
+    "reference-sources/openjfx/controls/ChoiceBox.java",
+    "reference-sources/openjfx/skins/ChoiceBoxSkin.java",
+    "reference-sources/openjfx/behavior/BehaviorBase.java",
+    "reference-sources/scenebuilder/builtin-fxml/ChoiceBox.fxml"
+  ]
+}

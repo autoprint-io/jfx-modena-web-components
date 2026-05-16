@@ -112,6 +112,19 @@
       ]
     },
     {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/LabeledSkinBase.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/LabeledSkinBase.java.md",
+      "componentTags": [
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink",
+        "jfx-label",
+        "jfx-radio-button",
+        "jfx-toggle-button"
+      ]
+    },
+    {
       "kind": "control-source",
       "cleanPath": "openjfx/controls/Button.java",
       "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Button.java.md",
@@ -135,6 +148,19 @@
         "jfx-button",
         "jfx-checkbox",
         "jfx-hyperlink"
+      ]
+    },
+    {
+      "kind": "behavior-source",
+      "cleanPath": "openjfx/behavior/BehaviorBase.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/BehaviorBase.java.md",
+      "componentTags": [
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink",
+        "jfx-radio-button",
+        "jfx-toggle-button",
+        "jfx-choice-box"
       ]
     },
     {
@@ -340,6 +366,19 @@
       ]
     },
     {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/Utils.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/skin/Utils.java.md",
+      "componentTags": [
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-radio-button",
+        "jfx-progress-indicator",
+        "jfx-progress-bar",
+        "jfx-text-area"
+      ]
+    },
+    {
       "kind": "fixture-source",
       "cleanPath": "scenebuilder/builtin-fxml/ProgressIndicator.fxml",
       "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressIndicator.fxml.md",
@@ -470,6 +509,22 @@
       "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarV.fxml.md",
       "componentTags": [
         "jfx-scroll-bar"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Pagination.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Pagination.java.md",
+      "componentTags": [
+        "jfx-pagination"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/PaginationSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/PaginationSkin.java.md",
+      "componentTags": [
+        "jfx-pagination"
       ]
     },
     {

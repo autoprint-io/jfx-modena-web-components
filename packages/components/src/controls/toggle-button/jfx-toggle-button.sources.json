@@ -1,1 +1,12 @@
-{}
+{
+  "tagName": "jfx-toggle-button",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/ToggleButton.java",
+    "reference-sources/openjfx/controls/ButtonBase.java",
+    "reference-sources/openjfx/skins/LabeledSkinBase.java",
+    "reference-sources/openjfx/skins/ToggleButtonSkin.java",
+    "reference-sources/openjfx/behavior/BehaviorBase.java",
+    "reference-sources/scenebuilder/builtin-fxml/ToggleButton.fxml"
+  ]
+}

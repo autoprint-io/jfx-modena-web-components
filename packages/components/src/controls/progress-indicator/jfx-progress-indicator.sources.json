@@ -1,1 +1,10 @@
-{}
+{
+  "tagName": "jfx-progress-indicator",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/ProgressIndicator.java",
+    "reference-sources/openjfx/skins/ProgressIndicatorSkin.java",
+    "reference-sources/openjfx/skins/Utils.java",
+    "reference-sources/scenebuilder/builtin-fxml/ProgressIndicator.fxml"
+  ]
+}

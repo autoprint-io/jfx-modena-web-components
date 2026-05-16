@@ -6,6 +6,9 @@
     "reference-sources/openjfx/controls/ButtonBase.java",
     "reference-sources/openjfx/controls/Labeled.java",
     "reference-sources/openjfx/skins/CheckBoxSkin.java",
+    "reference-sources/openjfx/skins/LabeledSkinBase.java",
+    "reference-sources/openjfx/skins/Utils.java",
+    "reference-sources/openjfx/behavior/BehaviorBase.java",
     "reference-sources/openjfx/behavior/ButtonBehavior.java",
     "reference-sources/scenebuilder/builtin-fxml/CheckBox.fxml"
   ]

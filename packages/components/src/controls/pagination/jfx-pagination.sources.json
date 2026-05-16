@@ -1,1 +1,8 @@
-{}
+{
+  "tagName": "jfx-pagination",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/Pagination.java",
+    "reference-sources/openjfx/skins/PaginationSkin.java"
+  ]
+}

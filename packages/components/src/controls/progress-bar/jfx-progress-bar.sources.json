@@ -6,6 +6,7 @@
     "reference-sources/openjfx/controls/ProgressIndicator.java",
     "reference-sources/openjfx/skins/ProgressBarSkin.java",
     "reference-sources/openjfx/skins/ProgressIndicatorSkin.java",
+    "reference-sources/openjfx/skins/Utils.java",
     "reference-sources/scenebuilder/builtin-fxml/ProgressBar.fxml"
   ]
 }

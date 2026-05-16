@@ -1,1 +1,13 @@
-{}
+{
+  "tagName": "jfx-radio-button",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/RadioButton.java",
+    "reference-sources/openjfx/controls/Labeled.java",
+    "reference-sources/openjfx/skins/LabeledSkinBase.java",
+    "reference-sources/openjfx/skins/RadioButtonSkin.java",
+    "reference-sources/openjfx/skins/Utils.java",
+    "reference-sources/openjfx/behavior/BehaviorBase.java",
+    "reference-sources/scenebuilder/builtin-fxml/RadioButton.fxml"
+  ]
+}
