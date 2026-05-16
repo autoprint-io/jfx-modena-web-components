@@ -16,6 +16,7 @@
     "codex:component-plan": "node --experimental-strip-types tools/codex/run-component-plan.ts",
     "codex:component-profile": "node --experimental-strip-types tools/codex/collect-component-profile.ts",
     "codex:source-traceability": "node --experimental-strip-types tools/codex/run-source-traceability.ts",
+    "codex:validate-output-schemas": "node --experimental-strip-types tools/codex/validate-output-schemas.ts",
     "compute:tokens": "node --experimental-strip-types tools/compute-tokens.ts",
     "extract:clean-sources": "node --experimental-strip-types tools/extract-clean-sources.ts",
     "generate:component-manifests": "node --experimental-strip-types tools/generate-component-manifests.ts",

@@ -28,8 +28,7 @@
     "summary": { "type": "string", "minLength": 1 },
     "sourceFilesToRead": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
+      "items": { "type": "string", "minLength": 1 }
     },
     "plannedFileChanges": {
       "type": "array",

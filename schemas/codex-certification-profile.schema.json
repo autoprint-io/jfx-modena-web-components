@@ -50,13 +50,11 @@
     },
     "allowedFiles": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
+      "items": { "type": "string", "minLength": 1 }
     },
     "sourceAuthority": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
+      "items": { "type": "string", "minLength": 1 }
     },
     "confidence": {
       "type": "string",

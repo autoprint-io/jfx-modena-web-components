@@ -112,9 +112,13 @@ export function executeLoggedCodexRun(options: CodexRunOptions): CodexRunResult 
 
   writeText(path.join(runDirectory, "run.json"), `${JSON.stringify(runMetadata, null, 2)}\n`);
 
-  if (options.outputPath) {
+  if (options.outputPath && exitCode === 0) {
     const resolvedOutputPath = path.resolve(options.cwd, options.outputPath);
     writeText(resolvedOutputPath, stdout);
+  } else if (options.outputPath) {
+    process.stderr.write(
+      `Codex failed with exit code ${exitCode}; output was not written to ${options.outputPath}.\n`,
+    );
   }
 
   return {
