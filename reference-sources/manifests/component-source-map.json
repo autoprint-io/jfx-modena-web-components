@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-16T05:54:21.848Z",
+  "generatedAt": "2026-05-16T07:55:37.116Z",
   "allowlistPath": "tools/clean-source-allowlist.json",
   "normalizedRoot": "reference-inputs/normalized",
   "outputRoot": "reference-sources",
-  "sourceCount": 72,
+  "sourceCount": 73,
   "missingCount": 0,
   "components": {
     "jfx-theme-modena": [
@@ -156,6 +156,15 @@
         "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
         "license": "GPL-2.0-only with Classpath Exception",
         "cleanSha256": "3a7ee644732cc1f2420bcb54a26b80084e2476a006a31e107f277294cec6cea4"
+      },
+      {
+        "kind": "behavior-source",
+        "cleanPath": "openjfx/behavior/ButtonBehavior.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java",
+        "sourceUrl": "https://github.com/openjdk/jfx/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "4e43fab6a6ed3acc1916df99e4be873dda5bcc4bd262d20d6152b9312721126b"
       },
       {
         "kind": "fixture-source",

@@ -126,6 +126,14 @@
       ]
     },
     {
+      "kind": "behavior-source",
+      "cleanPath": "openjfx/behavior/ButtonBehavior.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java.md",
+      "componentTags": [
+        "jfx-button"
+      ]
+    },
+    {
       "kind": "fixture-source",
       "cleanPath": "scenebuilder/builtin-fxml/Button.fxml",
       "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Button.fxml.md",

@@ -173,7 +173,7 @@
         "unitTest": "packages/components/src/controls/button/jfx-button.test.ts",
         "accessibilityTest": "packages/components/src/controls/button/jfx-button.a11y.test.ts"
       },
-      "sourceCount": 5
+      "sourceCount": 6
     },
     {
       "tagName": "jfx-button-bar",

@@ -307,6 +307,7 @@ function run(): void {
     if (
       (
         entry.kind === "common-source" ||
+        entry.kind === "behavior-source" ||
         entry.kind === "control-source" ||
         entry.kind === "scenebuilder-metadata" ||
         entry.kind === "skin-source"

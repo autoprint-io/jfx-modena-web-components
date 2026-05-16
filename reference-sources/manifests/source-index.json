@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-16T05:54:21.848Z",
+  "generatedAt": "2026-05-16T07:55:37.116Z",
   "allowlistPath": "tools/clean-source-allowlist.json",
   "normalizedRoot": "reference-inputs/normalized",
   "outputRoot": "reference-sources",
-  "sourceCount": 72,
+  "sourceCount": 73,
   "missingCount": 0,
   "sources": [
     {
@@ -279,6 +279,25 @@
       "license": "GPL-2.0-only with Classpath Exception",
       "rawSha256": "301de8f7adff343d17a32cd86a34ace47036753ede2b58c3181de4aa72808a35",
       "cleanSha256": "3a7ee644732cc1f2420bcb54a26b80084e2476a006a31e107f277294cec6cea4"
+    },
+    {
+      "cleanPath": "openjfx/behavior/ButtonBehavior.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java.md",
+      "localPath": null,
+      "contentSource": "normalized",
+      "kind": "behavior-source",
+      "componentTags": [
+        "jfx-button"
+      ],
+      "sourceId": "openjdk-jfx",
+      "sourceName": "OpenJFX Source",
+      "sourcePath": "git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java",
+      "sourceRepo": "https://github.com/openjdk/jfx.git",
+      "sourceUrl": "https://github.com/openjdk/jfx/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java",
+      "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+      "license": "GPL-2.0-only with Classpath Exception",
+      "rawSha256": "683b93690a146fc0fab3890d375f0c4d4a47700f0317efe9df0a4801d931c61d",
+      "cleanSha256": "4e43fab6a6ed3acc1916df99e4be873dda5bcc4bd262d20d6152b9312721126b"
     },
     {
       "cleanPath": "scenebuilder/builtin-fxml/Button.fxml",
