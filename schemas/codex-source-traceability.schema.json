@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-source-traceability.schema.json",
+  "title": "Codex source traceability result",
+  "type": "object",
+  "required": [
+    "component",
+    "sourceAuthorityStatus",
+    "sourceAuthority",
+    "missingSources",
+    "nonAuthoritativeInputs",
+    "blockers",
+    "recommendedNextSteps",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sourceAuthorityStatus": {
+      "type": "string",
+      "enum": ["complete_for_current_scope", "incomplete", "missing"]
+    },
+    "sourceAuthority": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "present", "authorityType", "notes"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "present": { "type": "boolean" },
+          "authorityType": {
+            "type": "string",
+            "enum": ["openjfx", "scenebuilder", "javafx-css-reference", "unknown"]
+          },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "missingSources": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "nonAuthoritativeInputs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "recommendedNextSteps": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH"]
+    }
+  }
+}

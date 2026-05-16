@@ -22,30 +22,30 @@ function parseContext(contextJson: string): {
   };
 }
 
-export function buildComponentImplementationPrompt(contextJson: string): string {
+export function buildImplementationPlanPrompt(contextJson: string): string {
   const { component, sourceAuthority, allowedFiles } = parseContext(contextJson);
 
-  return `You are implementing a source-backed change for one JavaFX Modena Web Component.
+  return `You are planning source-backed implementation work for one JavaFX Modena Web Component.
 
 Component tag: ${component}
 Source authority:
 ${sourceAuthority.map((source) => `- ${source}`).join("\n") || "- None declared"}
 
-Allowed files:
+Allowed files for any future implementation:
 ${allowedFiles.map((file) => `- ${file}`).join("\n") || "- None declared"}
 
 Constraints:
-- Write-gated stage. Edit only files listed in profile.allowedFiles.
+- Read-only planning stage. Do not edit, create, delete, format, regenerate, or commit files.
 - Use only the provided component context and source excerpts.
-- Preserve jfx-* runtime naming.
+- Do not implement behavior in this response.
 - Do not claim certification or promote component status.
-- Do not edit unrelated source authority, viewer, generated inventories, or package metadata unless explicitly required by the implementation plan.
-- If evidence is missing or the requested change requires files outside profile.allowedFiles, refuse by returning status "blocked".
+- Any future write recommendations must stay within profile.allowedFiles.
+- If evidence is missing, return planStatus "blocked_missing_evidence" and list blockers.
 
 Expected output:
 - Return JSON only.
-- The JSON must match schemas/codex-implementation-result.schema.json.
-- Include files changed, behavior implemented, tests updated, source-traceability notes, verification commands, remaining blockers, and confidence.
+- The JSON must match schemas/codex-implementation-plan.schema.json.
+- Include source files to read in full, planned file changes, runtime helpers to reuse, verification commands, certification blockers, residual risk, and confidence.
 
 Component context:
 
@@ -70,9 +70,9 @@ async function run(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(buildComponentImplementationPrompt(contextJson));
+  console.log(buildImplementationPlanPrompt(contextJson));
 }
 
-if (process.argv[1]?.endsWith("implement-component.prompt.ts")) {
+if (process.argv[1]?.endsWith("implementation-plan.prompt.ts")) {
   await run();
 }

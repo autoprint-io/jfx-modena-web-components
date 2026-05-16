@@ -15,32 +15,25 @@ function parseContext(contextJson: string): { component: string; sourceAuthority
   };
 }
 
-export function buildComponentAuditPrompt(contextJson: string): string {
+export function buildVerificationPlanPrompt(contextJson: string): string {
   const { component, sourceAuthority } = parseContext(contextJson);
 
-  return `You are auditing one JavaFX Modena Web Component.
+  return `You are designing a verification plan for one JavaFX Modena Web Component.
 
 Component tag: ${component}
 Source authority:
 ${sourceAuthority.map((source) => `- ${source}`).join("\n") || "- None declared"}
 
-Use only the provided component context and source excerpts. Do not claim certification.
-Return only JSON matching schemas/codex-component-audit.schema.json.
-
 Constraints:
-- Read-only audit stage. Do not edit, create, delete, format, regenerate, or commit files.
-- Treat reference-sources/ as authoritative in the documented priority order.
-- Treat reference-inputs/prototypes/ as non-authoritative comparison material only.
-- If evidence is missing, report it as a gap or blocker instead of inferring success.
+- Planning-only stage. Do not edit files or claim certification.
+- Use only the provided component context and source excerpts.
+- Separate commands to run, evidence to collect, pass criteria, fail criteria, and residual risk.
+- Include browser/runtime, accessibility, keyboard/focus, visual, behavior, and source-traceability gates where applicable.
+- If evidence is missing, list blockers and fail criteria explicitly.
 
-Audit requirements:
-- Compare implementation, template, styles, manifest, and sources.
-- Respect profile.allowedFiles and profile.sourceAuthority.
-- Treat profile.riskFlags as required areas to inspect.
-- Identify missing source traceability.
-- Identify behavior, keyboard/focus, accessibility, visual, and implementation gaps.
-- Prefer precise statuses over optimistic language.
-- If evidence is missing, report it as a gap.
+Expected output:
+- Return JSON only.
+- The JSON must match schemas/codex-verification-plan.schema.json.
 
 Component context:
 
@@ -65,9 +58,9 @@ async function run(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(buildComponentAuditPrompt(contextJson));
+  console.log(buildVerificationPlanPrompt(contextJson));
 }
 
-if (process.argv[1]?.endsWith("audit-component.prompt.ts")) {
+if (process.argv[1]?.endsWith("verification-plan.prompt.ts")) {
   await run();
 }

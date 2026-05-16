@@ -15,34 +15,28 @@ function parseContext(contextJson: string): { component: string; sourceAuthority
   };
 }
 
-export function buildComponentAuditPrompt(contextJson: string): string {
+export function buildPromotionDecisionPrompt(contextJson: string): string {
   const { component, sourceAuthority } = parseContext(contextJson);
 
-  return `You are auditing one JavaFX Modena Web Component.
+  return `You are making a status-promotion decision for one JavaFX Modena Web Component.
 
 Component tag: ${component}
 Source authority:
 ${sourceAuthority.map((source) => `- ${source}`).join("\n") || "- None declared"}
 
-Use only the provided component context and source excerpts. Do not claim certification.
-Return only JSON matching schemas/codex-component-audit.schema.json.
-
 Constraints:
-- Read-only audit stage. Do not edit, create, delete, format, regenerate, or commit files.
-- Treat reference-sources/ as authoritative in the documented priority order.
-- Treat reference-inputs/prototypes/ as non-authoritative comparison material only.
-- If evidence is missing, report it as a gap or blocker instead of inferring success.
+- Decision-only stage. Do not edit files.
+- Use only the provided component context, source excerpts, and supplied verification evidence.
+- Never mark certified unless visual, behavior, keyboard/focus, accessibility, browser/runtime, and source-traceability gates all have explicit evidence.
+- Do not infer certification from scaffolds, snapshots, generated manifests, or visual similarity alone.
+- If any gate is missing, decision must be "do_not_promote" or a non-certified target status.
 
-Audit requirements:
-- Compare implementation, template, styles, manifest, and sources.
-- Respect profile.allowedFiles and profile.sourceAuthority.
-- Treat profile.riskFlags as required areas to inspect.
-- Identify missing source traceability.
-- Identify behavior, keyboard/focus, accessibility, visual, and implementation gaps.
-- Prefer precise statuses over optimistic language.
-- If evidence is missing, report it as a gap.
+Expected output:
+- Return JSON only.
+- The JSON must match schemas/codex-promotion-decision.schema.json.
+- Include gate evidence, missing gates, statusChangeAllowed, rationale, residual risk, and confidence.
 
-Component context:
+Component context and evidence input:
 
 \`\`\`json
 ${contextJson}
@@ -65,9 +59,9 @@ async function run(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(buildComponentAuditPrompt(contextJson));
+  console.log(buildPromotionDecisionPrompt(contextJson));
 }
 
-if (process.argv[1]?.endsWith("audit-component.prompt.ts")) {
+if (process.argv[1]?.endsWith("promotion-decision.prompt.ts")) {
   await run();
 }

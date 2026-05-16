@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-promotion-decision.schema.json",
+  "title": "Codex promotion decision",
+  "type": "object",
+  "required": [
+    "component",
+    "decision",
+    "targetStatus",
+    "gateEvidence",
+    "missingGates",
+    "statusChangeAllowed",
+    "rationale",
+    "residualRisk",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": { "type": "string", "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "decision": { "type": "string", "enum": ["do_not_promote", "promote_to_implemented_partial", "promote_to_certified"] },
+    "targetStatus": { "type": "string", "minLength": 1 },
+    "gateEvidence": {
+      "type": "object",
+      "required": ["source", "visual", "behavior", "keyboardFocus", "accessibility", "browserRuntime"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "array", "items": { "type": "string" } },
+        "visual": { "type": "array", "items": { "type": "string" } },
+        "behavior": { "type": "array", "items": { "type": "string" } },
+        "keyboardFocus": { "type": "array", "items": { "type": "string" } },
+        "accessibility": { "type": "array", "items": { "type": "string" } },
+        "browserRuntime": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "missingGates": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "statusChangeAllowed": { "type": "boolean" },
+    "rationale": { "type": "string", "minLength": 1 },
+    "residualRisk": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "confidence": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }
+  }
+}

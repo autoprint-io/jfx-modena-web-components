@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-implementation-result.schema.json",
+  "title": "Codex implementation result",
+  "type": "object",
+  "required": [
+    "component",
+    "status",
+    "filesChanged",
+    "behaviorImplemented",
+    "testsUpdated",
+    "sourceTraceabilityNotes",
+    "verificationCommands",
+    "remainingBlockers",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": { "type": "string", "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "status": { "type": "string", "enum": ["implemented", "partially_implemented", "blocked"] },
+    "filesChanged": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "behaviorImplemented": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "testsUpdated": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "sourceTraceabilityNotes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "verificationCommands": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "remainingBlockers": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "confidence": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }
+  }
+}

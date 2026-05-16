@@ -15,32 +15,27 @@ function parseContext(contextJson: string): { component: string; sourceAuthority
   };
 }
 
-export function buildComponentAuditPrompt(contextJson: string): string {
+export function buildSourceTraceabilityPrompt(contextJson: string): string {
   const { component, sourceAuthority } = parseContext(contextJson);
 
-  return `You are auditing one JavaFX Modena Web Component.
+  return `You are performing a read-only source-traceability review for one JavaFX Modena Web Component.
 
 Component tag: ${component}
 Source authority:
 ${sourceAuthority.map((source) => `- ${source}`).join("\n") || "- None declared"}
 
-Use only the provided component context and source excerpts. Do not claim certification.
-Return only JSON matching schemas/codex-component-audit.schema.json.
-
 Constraints:
-- Read-only audit stage. Do not edit, create, delete, format, regenerate, or commit files.
+- Read-only stage. Do not edit, create, delete, format, regenerate, or commit files.
+- Use only the provided component context and source excerpts.
 - Treat reference-sources/ as authoritative in the documented priority order.
 - Treat reference-inputs/prototypes/ as non-authoritative comparison material only.
-- If evidence is missing, report it as a gap or blocker instead of inferring success.
+- Do not claim JavaFX/Modena certification.
+- If evidence is missing, report a blocker instead of inferring success.
 
-Audit requirements:
-- Compare implementation, template, styles, manifest, and sources.
-- Respect profile.allowedFiles and profile.sourceAuthority.
-- Treat profile.riskFlags as required areas to inspect.
-- Identify missing source traceability.
-- Identify behavior, keyboard/focus, accessibility, visual, and implementation gaps.
-- Prefer precise statuses over optimistic language.
-- If evidence is missing, report it as a gap.
+Expected output:
+- Return JSON only.
+- The JSON must match schemas/codex-source-traceability.schema.json.
+- Include every missing source, non-authoritative input, and blocker that prevents source-backed work.
 
 Component context:
 
@@ -65,9 +60,9 @@ async function run(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(buildComponentAuditPrompt(contextJson));
+  console.log(buildSourceTraceabilityPrompt(contextJson));
 }
 
-if (process.argv[1]?.endsWith("audit-component.prompt.ts")) {
+if (process.argv[1]?.endsWith("source-traceability.prompt.ts")) {
   await run();
 }

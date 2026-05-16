@@ -5,3 +5,4 @@ apps/*/dist/
 packages/*/dist/
 *.tsbuildinfo
 .playwright-mcp/
+.codex-runs/

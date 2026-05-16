@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-verification-result.schema.json",
+  "title": "Codex verification result",
+  "type": "object",
+  "required": [
+    "component",
+    "overallStatus",
+    "commandResults",
+    "evidenceCollected",
+    "passedCriteria",
+    "failedCriteria",
+    "residualRisk",
+    "blockers",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": { "type": "string", "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "overallStatus": { "type": "string", "enum": ["passed", "failed", "blocked", "partial"] },
+    "commandResults": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["command", "exitCode", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "command": { "type": "string", "minLength": 1 },
+          "exitCode": { "type": ["integer", "null"] },
+          "summary": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "evidenceCollected": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "passedCriteria": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "failedCriteria": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "residualRisk": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "blockers": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "confidence": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }
+  }
+}

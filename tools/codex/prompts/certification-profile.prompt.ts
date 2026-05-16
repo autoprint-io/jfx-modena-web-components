@@ -15,32 +15,27 @@ function parseContext(contextJson: string): { component: string; sourceAuthority
   };
 }
 
-export function buildComponentAuditPrompt(contextJson: string): string {
+export function buildCertificationProfilePrompt(contextJson: string): string {
   const { component, sourceAuthority } = parseContext(contextJson);
 
-  return `You are auditing one JavaFX Modena Web Component.
+  return `You are defining a read-only certification profile for one JavaFX Modena Web Component.
 
 Component tag: ${component}
 Source authority:
 ${sourceAuthority.map((source) => `- ${source}`).join("\n") || "- None declared"}
 
-Use only the provided component context and source excerpts. Do not claim certification.
-Return only JSON matching schemas/codex-component-audit.schema.json.
-
 Constraints:
-- Read-only audit stage. Do not edit, create, delete, format, regenerate, or commit files.
-- Treat reference-sources/ as authoritative in the documented priority order.
-- Treat reference-inputs/prototypes/ as non-authoritative comparison material only.
-- If evidence is missing, report it as a gap or blocker instead of inferring success.
+- Read-only stage. Do not edit, create, delete, format, regenerate, or commit files.
+- Use only the provided component context and source excerpts.
+- Do not claim certification.
+- Do not promote component status.
+- Define the evidence gates needed before certification-driven implementation can proceed.
+- If source, visual, behavior, keyboard/focus, accessibility, or browser/runtime evidence is missing, report it as a blocker.
 
-Audit requirements:
-- Compare implementation, template, styles, manifest, and sources.
-- Respect profile.allowedFiles and profile.sourceAuthority.
-- Treat profile.riskFlags as required areas to inspect.
-- Identify missing source traceability.
-- Identify behavior, keyboard/focus, accessibility, visual, and implementation gaps.
-- Prefer precise statuses over optimistic language.
-- If evidence is missing, report it as a gap.
+Expected output:
+- Return JSON only.
+- The JSON must match schemas/codex-certification-profile.schema.json.
+- Include the current component status, required gates, allowed files, source authority, known blockers, and confidence.
 
 Component context:
 
@@ -65,9 +60,9 @@ async function run(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(buildComponentAuditPrompt(contextJson));
+  console.log(buildCertificationProfilePrompt(contextJson));
 }
 
-if (process.argv[1]?.endsWith("audit-component.prompt.ts")) {
+if (process.argv[1]?.endsWith("certification-profile.prompt.ts")) {
   await run();
 }

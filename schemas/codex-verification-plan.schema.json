@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-verification-plan.schema.json",
+  "title": "Codex verification plan",
+  "type": "object",
+  "required": [
+    "component",
+    "commandsToRun",
+    "evidenceToCollect",
+    "passCriteria",
+    "failCriteria",
+    "residualRisk",
+    "blockers",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "commandsToRun": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "evidenceToCollect": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "passCriteria": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "failCriteria": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "residualRisk": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "blockers": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "confidence": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH"] }
+  }
+}

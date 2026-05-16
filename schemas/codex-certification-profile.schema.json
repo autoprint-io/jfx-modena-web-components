@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-certification-profile.schema.json",
+  "title": "Codex certification profile",
+  "type": "object",
+  "required": [
+    "component",
+    "currentStatus",
+    "certificationStatus",
+    "scope",
+    "requiredGates",
+    "evidenceRequired",
+    "knownBlockers",
+    "allowedFiles",
+    "sourceAuthority",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "currentStatus": {
+      "type": "string",
+      "enum": ["scaffold_only", "implemented_partial"]
+    },
+    "certificationStatus": { "type": "string", "minLength": 1 },
+    "scope": { "type": "string", "minLength": 1 },
+    "requiredGates": {
+      "type": "object",
+      "required": ["source", "visual", "behavior", "keyboardFocus", "accessibility", "browserRuntime"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "array", "items": { "type": "string" } },
+        "visual": { "type": "array", "items": { "type": "string" } },
+        "behavior": { "type": "array", "items": { "type": "string" } },
+        "keyboardFocus": { "type": "array", "items": { "type": "string" } },
+        "accessibility": { "type": "array", "items": { "type": "string" } },
+        "browserRuntime": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidenceRequired": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "knownBlockers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "allowedFiles": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "sourceAuthority": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH"]
+    }
+  }
+}

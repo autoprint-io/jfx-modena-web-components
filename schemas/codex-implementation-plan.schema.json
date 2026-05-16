@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-implementation-plan.schema.json",
+  "title": "Codex implementation plan",
+  "type": "object",
+  "required": [
+    "component",
+    "planStatus",
+    "summary",
+    "sourceFilesToRead",
+    "plannedFileChanges",
+    "runtimeHelpersToReuse",
+    "verificationCommands",
+    "certificationBlockers",
+    "residualRisk",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "planStatus": {
+      "type": "string",
+      "enum": ["ready_for_implementation", "blocked_missing_evidence", "blocked_out_of_scope"]
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "sourceFilesToRead": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "plannedFileChanges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "changeType", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "changeType": {
+            "type": "string",
+            "enum": ["implementation", "template", "styles", "unit-test", "accessibility-test", "metadata", "other"]
+          },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "runtimeHelpersToReuse": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "verificationCommands": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "certificationBlockers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "residualRisk": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH"]
+    }
+  }
+}
