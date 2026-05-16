@@ -32,8 +32,20 @@ function run(): void {
   assert("preflight-no-failures", getArray(preflight, ["checks"]).every((check) => isRecord(check) && check.status !== "fail"), preflight);
 
   const classification = runJsonCommand("change-classifier-json", "npm run --silent codex:change-classifier -- --json");
-  assert("change-classifier-areas", getArray(classification, ["areas"]).length > 0, classification);
-  assert("change-classifier-files", getArray(classification, ["dirtyFiles"]).length > 0, classification);
+  const classificationDirty = getPath(classification, ["git", "dirty"]);
+  const classificationAreas = getArray(classification, ["areas"]);
+  const classificationFiles = getArray(classification, ["dirtyFiles"]);
+  assert("change-classifier-dirty-flag", typeof classificationDirty === "boolean", classification);
+  assert(
+    "change-classifier-areas",
+    classificationDirty === true ? classificationAreas.length > 0 : classificationAreas.length === 0,
+    classification,
+  );
+  assert(
+    "change-classifier-files",
+    classificationDirty === true ? classificationFiles.length > 0 : classificationFiles.length === 0,
+    classification,
+  );
 
   runCommand(
     "handoff",
