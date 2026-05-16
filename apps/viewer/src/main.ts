@@ -1,8 +1,9 @@
 import { adoptModenaTheme } from "@autoprint/jfx-modena-design-system";
-import { defineJfxButton, defineJfxLabel } from "@autoprint/jfx-modena-components";
+import { defineJfxButton, defineJfxCheckbox, defineJfxLabel } from "@autoprint/jfx-modena-components";
 
 adoptModenaTheme();
 defineJfxButton();
+defineJfxCheckbox();
 defineJfxLabel();
 
 const app = document.querySelector<HTMLDivElement>("#app");
@@ -114,6 +115,7 @@ app.innerHTML = `
     <aside class="sidebar">
       <h1>JFX Modena</h1>
       <div class="nav-item active">Button</div>
+      <div class="nav-item">CheckBox</div>
       <div class="nav-item">Label</div>
     </aside>
 
@@ -138,6 +140,39 @@ app.innerHTML = `
             <div class="variant">
               <span class="label">Keyboard</span>
               <div><jfx-button id="keyboard-button">Focus with Tab</jfx-button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="component-title">jfx-checkbox</h2>
+        <div class="panel">
+          <div class="panel-header">Variants</div>
+          <div class="variants">
+            <div class="variant">
+              <span class="label">Normal</span>
+              <div><jfx-checkbox>CheckBox</jfx-checkbox></div>
+            </div>
+            <div class="variant">
+              <span class="label">Checked</span>
+              <div><jfx-checkbox checked text="Checked"></jfx-checkbox></div>
+            </div>
+            <div class="variant">
+              <span class="label">Indeterminate</span>
+              <div><jfx-checkbox indeterminate text="Mixed"></jfx-checkbox></div>
+            </div>
+            <div class="variant">
+              <span class="label">Tri-state</span>
+              <div><jfx-checkbox allow-indeterminate text="Click cycle"></jfx-checkbox></div>
+            </div>
+            <div class="variant">
+              <span class="label">Disabled</span>
+              <div><jfx-checkbox disabled text="Disabled"></jfx-checkbox></div>
+            </div>
+            <div class="variant">
+              <span class="label">Mnemonic</span>
+              <div><jfx-checkbox show-mnemonics text="_Option"></jfx-checkbox></div>
             </div>
           </div>
         </div>

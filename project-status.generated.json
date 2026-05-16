@@ -111,8 +111,8 @@
   "components": {
     "total": 84,
     "byStatus": {
-      "implemented_partial": 2,
-      "scaffold_only": 82
+      "implemented_partial": 3,
+      "scaffold_only": 81
     },
     "byCategory": {
       "charts": 8,
@@ -135,6 +135,12 @@
         "certificationStatus": "not_certified_behavior_visual_a11y_incomplete"
       },
       {
+        "tagName": "jfx-checkbox",
+        "category": "controls",
+        "sourceCount": 10,
+        "certificationStatus": "not_certified_behavior_visual_a11y_incomplete"
+      },
+      {
         "tagName": "jfx-label",
         "category": "controls",
         "sourceCount": 6,
@@ -142,12 +148,6 @@
       }
     ],
     "sourceBackedScaffolds": [
-      {
-        "tagName": "jfx-checkbox",
-        "category": "controls",
-        "sourceCount": 10,
-        "certificationStatus": "missing_implementation"
-      },
       {
         "tagName": "jfx-choice-box",
         "category": "choices",
@@ -198,12 +198,6 @@
       }
     ],
     "suggestedFirstPassCandidates": [
-      {
-        "tagName": "jfx-checkbox",
-        "category": "controls",
-        "sourceCount": 10,
-        "certificationStatus": "missing_implementation"
-      },
       {
         "tagName": "jfx-hyperlink",
         "category": "controls",

@@ -4,8 +4,8 @@
   "counts": {
     "total": 84,
     "byStatus": {
-      "implemented_partial": 2,
-      "scaffold_only": 82
+      "implemented_partial": 3,
+      "scaffold_only": 81
     },
     "byCategory": {
       "containers": 19,
@@ -213,8 +213,8 @@
       "tagName": "jfx-checkbox",
       "category": "controls",
       "directory": "packages/components/src/controls/checkbox",
-      "componentStatus": "scaffold_only",
-      "certificationStatus": "missing_implementation",
+      "componentStatus": "implemented_partial",
+      "certificationStatus": "not_certified_behavior_visual_a11y_incomplete",
       "files": {
         "component": "packages/components/src/controls/checkbox/jfx-checkbox.ts",
         "template": "packages/components/src/controls/checkbox/jfx-checkbox.template.ts",

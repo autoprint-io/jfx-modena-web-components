@@ -6,9 +6,10 @@
     <title>JFX Components Test Fixture</title>
     <script type="module">
       import { adoptModenaTheme } from "@autoprint/jfx-modena-design-system";
-      import { defineJfxLabel } from "@autoprint/jfx-modena-components";
+      import { defineJfxCheckbox, defineJfxLabel } from "@autoprint/jfx-modena-components";
 
       adoptModenaTheme();
+      defineJfxCheckbox();
       defineJfxLabel();
       window.__jfxComponentsReady = true;
     </script>
@@ -24,5 +25,12 @@
     <jfx-label id="escaped-mnemonic-label" show-mnemonics text="Save__As"></jfx-label>
     <jfx-label id="label-for" show-mnemonics text="_Name" label-for="fixture-name"></jfx-label>
     <input id="fixture-name" value="Target input" />
+    <jfx-checkbox id="checkbox-slot">CheckBox</jfx-checkbox>
+    <jfx-checkbox id="checkbox-text" text="Source checkbox"></jfx-checkbox>
+    <jfx-checkbox id="checkbox-checked" checked text="Checked"></jfx-checkbox>
+    <jfx-checkbox id="checkbox-indeterminate" indeterminate text="Mixed"></jfx-checkbox>
+    <jfx-checkbox id="checkbox-allow-indeterminate" allow-indeterminate text="Tri-state"></jfx-checkbox>
+    <jfx-checkbox id="checkbox-disabled" disabled text="Disabled"></jfx-checkbox>
+    <jfx-checkbox id="checkbox-mnemonic" show-mnemonics text="_Option"></jfx-checkbox>
   </body>
 </html>

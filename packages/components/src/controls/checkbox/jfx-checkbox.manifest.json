@@ -1,1 +1,30 @@
-{}
+{
+  "tagName": "jfx-checkbox",
+  "javafxClass": "javafx.scene.control.CheckBox",
+  "javafxStyleClass": "check-box",
+  "status": "implemented_partial",
+  "attributes": [
+    "allow-indeterminate",
+    "checked",
+    "disabled",
+    "indeterminate",
+    "pressed",
+    "show-mnemonics",
+    "text"
+  ],
+  "parts": [
+    "box",
+    "label",
+    "mark",
+    "mnemonic",
+    "text"
+  ],
+  "states": [
+    "checked",
+    "disabled",
+    "focus-visible",
+    "indeterminate",
+    "pressed",
+    "show-mnemonics"
+  ]
+}
