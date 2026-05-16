@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { runnerOutputSchemaPaths } from "./codex-stages.ts";
 
 type Finding = {
   schemaPath: string;
@@ -11,13 +12,6 @@ type Finding = {
 
 const currentFile = fileURLToPath(import.meta.url);
 const projectRoot = path.resolve(path.dirname(currentFile), "..", "..");
-
-const runnerOutputSchemas = [
-  "schemas/codex-component-audit.schema.json",
-  "schemas/codex-source-traceability.schema.json",
-  "schemas/codex-certification-profile.schema.json",
-  "schemas/codex-implementation-plan.schema.json",
-];
 
 const unsupportedKeywords = ["uniqueItems"];
 
@@ -58,7 +52,7 @@ function collectUnsupportedKeywords(
 
 const findings: Finding[] = [];
 
-for (const schemaPath of runnerOutputSchemas) {
+for (const schemaPath of runnerOutputSchemaPaths) {
   const absolutePath = path.join(projectRoot, schemaPath);
   const schema = JSON.parse(fs.readFileSync(absolutePath, "utf8")) as unknown;
   collectUnsupportedKeywords(schema, schemaPath, "$", findings);
@@ -72,4 +66,4 @@ if (findings.length > 0) {
   process.exit(1);
 }
 
-console.log(`Codex output schemas compatible: ${runnerOutputSchemas.length}`);
+console.log(`Codex output schemas compatible: ${runnerOutputSchemaPaths.length}`);

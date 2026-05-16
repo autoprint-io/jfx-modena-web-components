@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-source-authority-seeding.schema.json",
+  "title": "Codex source authority seeding",
+  "type": "object",
+  "required": [
+    "component",
+    "currentSourceCount",
+    "suggestedSources",
+    "sourceKinds",
+    "rationale",
+    "missingSourceRisks",
+    "confidence",
+    "blockers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "currentSourceCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "suggestedSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sourceKind", "authority", "required", "rationale"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "sourceKind": { "type": "string", "minLength": 1 },
+          "authority": {
+            "type": "string",
+            "enum": ["openjfx", "scenebuilder", "css", "docs", "unknown"]
+          },
+          "required": { "type": "boolean" },
+          "rationale": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "sourceKinds": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "rationale": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "missingSourceRisks": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH"]
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}
