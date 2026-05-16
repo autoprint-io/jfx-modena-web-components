@@ -24,6 +24,7 @@
     "extract:clean-sources": "node --experimental-strip-types tools/extract-clean-sources.ts",
     "generate:component-manifests": "node --experimental-strip-types tools/generate-component-manifests.ts",
     "report:components": "node --experimental-strip-types tools/reports/generate-component-report.ts",
+    "sync:component-sources": "node --experimental-strip-types tools/sync-component-sources.ts",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "typecheck:tools": "tsc --noEmit -p tsconfig.json",

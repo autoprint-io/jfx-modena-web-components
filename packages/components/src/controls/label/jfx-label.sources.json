@@ -1,1 +1,10 @@
-{}
+{
+  "tagName": "jfx-label",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/Label.java",
+    "reference-sources/openjfx/controls/Labeled.java",
+    "reference-sources/openjfx/skins/LabelSkin.java",
+    "reference-sources/scenebuilder/builtin-fxml/Label.fxml"
+  ]
+}

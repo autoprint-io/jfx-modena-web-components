@@ -1,1 +1,12 @@
-{}
+{
+  "tagName": "jfx-checkbox",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/CheckBox.java",
+    "reference-sources/openjfx/controls/ButtonBase.java",
+    "reference-sources/openjfx/controls/Labeled.java",
+    "reference-sources/openjfx/skins/CheckBoxSkin.java",
+    "reference-sources/openjfx/behavior/ButtonBehavior.java",
+    "reference-sources/scenebuilder/builtin-fxml/CheckBox.fxml"
+  ]
+}

@@ -92,6 +92,8 @@
       "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java.md",
       "componentTags": [
         "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink",
         "jfx-toggle-button",
         "jfx-menu-button",
         "jfx-split-menu-button"
@@ -130,7 +132,9 @@
       "cleanPath": "openjfx/behavior/ButtonBehavior.java",
       "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/com/sun/javafx/scene/control/behavior/ButtonBehavior.java.md",
       "componentTags": [
-        "jfx-button"
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink"
       ]
     },
     {
@@ -322,7 +326,8 @@
       "cleanPath": "openjfx/controls/ProgressIndicator.java",
       "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressIndicator.java.md",
       "componentTags": [
-        "jfx-progress-indicator"
+        "jfx-progress-indicator",
+        "jfx-progress-bar"
       ]
     },
     {
@@ -330,7 +335,8 @@
       "cleanPath": "openjfx/skins/ProgressIndicatorSkin.java",
       "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressIndicatorSkin.java.md",
       "componentTags": [
-        "jfx-progress-indicator"
+        "jfx-progress-indicator",
+        "jfx-progress-bar"
       ]
     },
     {

@@ -1,1 +1,12 @@
-{}
+{
+  "tagName": "jfx-hyperlink",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/Hyperlink.java",
+    "reference-sources/openjfx/controls/ButtonBase.java",
+    "reference-sources/openjfx/controls/Labeled.java",
+    "reference-sources/openjfx/skins/HyperlinkSkin.java",
+    "reference-sources/openjfx/behavior/ButtonBehavior.java",
+    "reference-sources/scenebuilder/builtin-fxml/Hyperlink.fxml"
+  ]
+}

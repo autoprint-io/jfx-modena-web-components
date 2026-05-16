@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T07:55:37.116Z",
+  "generatedAt": "2026-05-16T08:53:12.489Z",
   "allowlistPath": "tools/clean-source-allowlist.json",
   "normalizedRoot": "reference-inputs/normalized",
   "outputRoot": "reference-sources",
@@ -205,6 +205,8 @@
       "kind": "common-source",
       "componentTags": [
         "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink",
         "jfx-toggle-button",
         "jfx-menu-button",
         "jfx-split-menu-button"
@@ -287,7 +289,9 @@
       "contentSource": "normalized",
       "kind": "behavior-source",
       "componentTags": [
-        "jfx-button"
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-hyperlink"
       ],
       "sourceId": "openjdk-jfx",
       "sourceName": "OpenJFX Source",
@@ -743,7 +747,8 @@
       "contentSource": "normalized",
       "kind": "control-source",
       "componentTags": [
-        "jfx-progress-indicator"
+        "jfx-progress-indicator",
+        "jfx-progress-bar"
       ],
       "sourceId": "openjdk-jfx",
       "sourceName": "OpenJFX Source",
@@ -762,7 +767,8 @@
       "contentSource": "normalized",
       "kind": "skin-source",
       "componentTags": [
-        "jfx-progress-indicator"
+        "jfx-progress-indicator",
+        "jfx-progress-bar"
       ],
       "sourceId": "openjdk-jfx",
       "sourceName": "OpenJFX Source",

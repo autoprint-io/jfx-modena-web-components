@@ -224,7 +224,7 @@
         "unitTest": "packages/components/src/controls/checkbox/jfx-checkbox.test.ts",
         "accessibilityTest": "packages/components/src/controls/checkbox/jfx-checkbox.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 7
     },
     {
       "tagName": "jfx-choice-box",
@@ -479,7 +479,7 @@
         "unitTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.test.ts",
         "accessibilityTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 7
     },
     {
       "tagName": "jfx-image-view",
@@ -513,7 +513,7 @@
         "unitTest": "packages/components/src/controls/label/jfx-label.test.ts",
         "accessibilityTest": "packages/components/src/controls/label/jfx-label.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 5
     },
     {
       "tagName": "jfx-line",
@@ -785,7 +785,7 @@
         "unitTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.test.ts",
         "accessibilityTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.a11y.test.ts"
       },
-      "sourceCount": 0
+      "sourceCount": 6
     },
     {
       "tagName": "jfx-progress-indicator",
