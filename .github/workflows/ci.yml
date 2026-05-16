@@ -33,7 +33,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
+        run: pnpm --filter @autoprint/jfx-modena-components exec playwright install --with-deps chromium
 
       - name: Codex automation self-test
         run: npm run codex:self-test
