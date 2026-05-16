@@ -6,3 +6,5 @@ packages/*/dist/
 *.tsbuildinfo
 .playwright-mcp/
 .codex-runs/
+playwright-report/
+test-results/

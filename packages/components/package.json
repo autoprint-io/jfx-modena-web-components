@@ -18,7 +18,10 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "test": "echo \"No tests configured yet\"",
+    "test": "playwright test -c playwright.config.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
   }
 }

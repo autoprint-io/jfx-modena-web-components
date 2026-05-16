@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "tools/codex/generate-project-status.ts",
+  "sourceFiles": [
+    "package.json",
+    "packages/components/src/component-status.json",
+    "reference-sources/manifests/source-index.json",
+    ".agents/skills/*/SKILL.md",
+    ".codex/agents/*.toml",
+    ".codex/hooks.json",
+    "tools/codex/hooks/*.ts",
+    "AGENTS.md"
+  ],
+  "project": {
+    "name": "@autoprint/jfx-modena-web-components",
+    "packageManager": "pnpm@10.29.3",
+    "private": true,
+    "scripts": {
+      "build": "pnpm -r build",
+      "ci": "npm run codex:self-test && npm run verify && git diff --check",
+      "codex:audit-component": "node --experimental-strip-types tools/codex/run-component-audit.ts",
+      "codex:certification-profile": "node --experimental-strip-types tools/codex/run-certification-profile.ts",
+      "codex:change-classifier": "node --experimental-strip-types tools/codex/change-classifier.ts",
+      "codex:closeout": "node --experimental-strip-types tools/codex/closeout.ts",
+      "codex:component-context": "node --experimental-strip-types tools/codex/collect-component-context.ts",
+      "codex:component-plan": "node --experimental-strip-types tools/codex/run-component-plan.ts",
+      "codex:component-profile": "node --experimental-strip-types tools/codex/collect-component-profile.ts",
+      "codex:handoff": "node --experimental-strip-types tools/codex/generate-handoff.ts",
+      "codex:preflight": "node --experimental-strip-types tools/codex/preflight.ts",
+      "codex:project-status": "node --experimental-strip-types tools/codex/generate-project-status.ts",
+      "codex:self-test": "node --experimental-strip-types tools/codex/self-test.ts",
+      "codex:source-authority-seeding": "node --experimental-strip-types tools/codex/run-source-authority-seeding.ts",
+      "codex:source-traceability": "node --experimental-strip-types tools/codex/run-source-traceability.ts",
+      "codex:stage": "node --experimental-strip-types tools/codex/run-component-stage.ts",
+      "codex:stage-batch": "node --experimental-strip-types tools/codex/run-component-stage-batch.ts",
+      "codex:validate-output-schemas": "node --experimental-strip-types tools/codex/validate-output-schemas.ts",
+      "test": "pnpm -r test",
+      "typecheck": "pnpm -r typecheck",
+      "verify": "pnpm typecheck && pnpm test && npm run typecheck:tools && pnpm build && npm run compute:tokens && npm run generate:component-manifests && npm run validate:components && npm run extract:clean-sources -- --dry-run",
+      "viewer:dev": "pnpm --filter @autoprint/jfx-modena-viewer dev"
+    }
+  },
+  "codex": {
+    "configPath": ".codex/config.toml",
+    "agentCount": 5,
+    "agents": [
+      "jfx_component_worker",
+      "jfx_prompt_pipeline_auditor",
+      "jfx_reviewer",
+      "jfx_source_explorer",
+      "jfx_visual_verifier"
+    ],
+    "hookFiles": [
+      ".codex/hooks.json"
+    ],
+    "skillCount": 6,
+    "skills": [
+      "jfx-certification-gates",
+      "jfx-codex-pipeline",
+      "jfx-component-first-pass",
+      "jfx-modena-web-components",
+      "jfx-source-authority",
+      "jfx-viewer-verification"
+    ],
+    "instructionFiles": [
+      "AGENTS.md",
+      "apps/viewer/AGENTS.md",
+      "packages/components/AGENTS.md",
+      "packages/design-system/AGENTS.md",
+      "reference-sources/AGENTS.md",
+      "tools/codex/AGENTS.md"
+    ],
+    "stages": [
+      {
+        "id": "source-authority-seeding",
+        "readOnly": true,
+        "defaultFullSources": false,
+        "schemaPath": "schemas/codex-source-authority-seeding.schema.json",
+        "npmScript": "codex:source-authority-seeding"
+      },
+      {
+        "id": "source-traceability",
+        "readOnly": true,
+        "defaultFullSources": true,
+        "schemaPath": "schemas/codex-source-traceability.schema.json",
+        "npmScript": "codex:source-traceability"
+      },
+      {
+        "id": "certification-profile",
+        "readOnly": true,
+        "defaultFullSources": false,
+        "schemaPath": "schemas/codex-certification-profile.schema.json",
+        "npmScript": "codex:certification-profile"
+      },
+      {
+        "id": "component-plan",
+        "readOnly": true,
+        "defaultFullSources": false,
+        "schemaPath": "schemas/codex-implementation-plan.schema.json",
+        "npmScript": "codex:component-plan"
+      },
+      {
+        "id": "audit-component",
+        "readOnly": true,
+        "defaultFullSources": false,
+        "schemaPath": "schemas/codex-component-audit.schema.json",
+        "npmScript": "codex:audit-component"
+      }
+    ]
+  },
+  "components": {
+    "total": 84,
+    "byStatus": {
+      "implemented_partial": 2,
+      "scaffold_only": 82
+    },
+    "byCategory": {
+      "charts": 8,
+      "choices": 4,
+      "containers": 19,
+      "content": 2,
+      "controls": 13,
+      "data": 6,
+      "media": 3,
+      "menus": 6,
+      "misc": 7,
+      "shapes": 13,
+      "text-inputs": 3
+    },
+    "implementedPartial": [
+      {
+        "tagName": "jfx-button",
+        "category": "controls",
+        "sourceCount": 10,
+        "certificationStatus": "not_certified_behavior_visual_a11y_incomplete"
+      },
+      {
+        "tagName": "jfx-label",
+        "category": "controls",
+        "sourceCount": 6,
+        "certificationStatus": "not_certified_behavior_visual_a11y_incomplete"
+      }
+    ],
+    "sourceBackedScaffolds": [
+      {
+        "tagName": "jfx-checkbox",
+        "category": "controls",
+        "sourceCount": 10,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-choice-box",
+        "category": "choices",
+        "sourceCount": 4,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-hyperlink",
+        "category": "controls",
+        "sourceCount": 9,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-pagination",
+        "category": "controls",
+        "sourceCount": 3,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-progress-bar",
+        "category": "controls",
+        "sourceCount": 7,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-progress-indicator",
+        "category": "controls",
+        "sourceCount": 5,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-radio-button",
+        "category": "controls",
+        "sourceCount": 8,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-text-area",
+        "category": "text-inputs",
+        "sourceCount": 5,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-toggle-button",
+        "category": "controls",
+        "sourceCount": 7,
+        "certificationStatus": "missing_implementation"
+      }
+    ],
+    "suggestedFirstPassCandidates": [
+      {
+        "tagName": "jfx-checkbox",
+        "category": "controls",
+        "sourceCount": 10,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-hyperlink",
+        "category": "controls",
+        "sourceCount": 9,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-radio-button",
+        "category": "controls",
+        "sourceCount": 8,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-progress-bar",
+        "category": "controls",
+        "sourceCount": 7,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-toggle-button",
+        "category": "controls",
+        "sourceCount": 7,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-progress-indicator",
+        "category": "controls",
+        "sourceCount": 5,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-text-area",
+        "category": "text-inputs",
+        "sourceCount": 5,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-choice-box",
+        "category": "choices",
+        "sourceCount": 4,
+        "certificationStatus": "missing_implementation"
+      },
+      {
+        "tagName": "jfx-pagination",
+        "category": "controls",
+        "sourceCount": 3,
+        "certificationStatus": "missing_implementation"
+      }
+    ]
+  },
+  "referenceSources": {
+    "sourceCount": 78,
+    "missingCount": 0,
+    "byKind": {
+      "behavior-source": 2,
+      "common-source": 10,
+      "control-source": 18,
+      "docs": 1,
+      "fixture-source": 17,
+      "modena-css": 4,
+      "scenebuilder-metadata": 4,
+      "skin-source": 22
+    }
+  },
+  "verification": {
+    "defaultCommand": "npm run verify",
+    "structuralCommands": [
+      "npm run codex:preflight",
+      "npm run codex:project-status",
+      "npm run typecheck:tools",
+      "npm run codex:validate-output-schemas",
+      "npm run validate:components",
+      "git diff --check"
+    ],
+    "areaCommands": {
+      "components": [
+        "pnpm --filter @jfx-modena/components test",
+        "pnpm typecheck",
+        "pnpm build",
+        "npm run generate:component-manifests",
+        "npm run validate:components"
+      ],
+      "source-authority": [
+        "npm run extract:clean-sources",
+        "npm run generate:component-manifests",
+        "npm run validate:components",
+        "npm run extract:clean-sources -- --dry-run"
+      ],
+      "viewer": [
+        "npm run viewer:dev",
+        "pnpm build"
+      ],
+      "codex-pipeline": [
+        "npm run typecheck:tools",
+        "npm run codex:validate-output-schemas",
+        "npm run --silent codex:audit-component -- jfx-button --print-prompt"
+      ]
+    }
+  },
+  "guardrails": [
+    "Do not claim JavaFX/Modena certification without source, visual, behavior, keyboard/focus, accessibility, and browser/runtime evidence.",
+    "Do not use .codex-runs as source authority.",
+    "Do not hand-edit generated component-status or derived token files.",
+    "Do not commit, push, publish, or run destructive cleanup unless Vinny explicitly asks.",
+    "Keep first component passes minimal, source-backed, tested, and explicitly partial."
+  ]
+}

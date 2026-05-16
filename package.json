@@ -10,11 +10,18 @@
   ],
   "scripts": {
     "build": "pnpm -r build",
+    "ci": "npm run codex:self-test && npm run verify && git diff --check",
     "codex:audit-component": "node --experimental-strip-types tools/codex/run-component-audit.ts",
     "codex:certification-profile": "node --experimental-strip-types tools/codex/run-certification-profile.ts",
     "codex:component-context": "node --experimental-strip-types tools/codex/collect-component-context.ts",
     "codex:component-plan": "node --experimental-strip-types tools/codex/run-component-plan.ts",
     "codex:component-profile": "node --experimental-strip-types tools/codex/collect-component-profile.ts",
+    "codex:change-classifier": "node --experimental-strip-types tools/codex/change-classifier.ts",
+    "codex:closeout": "node --experimental-strip-types tools/codex/closeout.ts",
+    "codex:handoff": "node --experimental-strip-types tools/codex/generate-handoff.ts",
+    "codex:preflight": "node --experimental-strip-types tools/codex/preflight.ts",
+    "codex:project-status": "node --experimental-strip-types tools/codex/generate-project-status.ts",
+    "codex:self-test": "node --experimental-strip-types tools/codex/self-test.ts",
     "codex:source-authority-seeding": "node --experimental-strip-types tools/codex/run-source-authority-seeding.ts",
     "codex:source-traceability": "node --experimental-strip-types tools/codex/run-source-traceability.ts",
     "codex:stage": "node --experimental-strip-types tools/codex/run-component-stage.ts",
@@ -34,7 +41,7 @@
     "validate:component-sources": "node --experimental-strip-types tools/validators/validate-component-sources.ts",
     "validate:component-status": "node --experimental-strip-types tools/validators/validate-component-status.ts",
     "validate:components": "npm run validate:component-manifests && npm run validate:component-sources && npm run validate:component-status && npm run validate:component-profiles",
-    "verify": "pnpm typecheck && npm run typecheck:tools && pnpm build && npm run compute:tokens && npm run generate:component-manifests && npm run validate:components && npm run extract:clean-sources -- --dry-run",
+    "verify": "pnpm typecheck && pnpm test && npm run typecheck:tools && pnpm build && npm run compute:tokens && npm run generate:component-manifests && npm run validate:components && npm run extract:clean-sources -- --dry-run",
     "viewer:dev": "pnpm --filter @autoprint/jfx-modena-viewer dev"
   },
   "devDependencies": {

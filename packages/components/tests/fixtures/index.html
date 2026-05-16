@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFX Components Test Fixture</title>
+    <script type="module">
+      import { adoptModenaTheme } from "@autoprint/jfx-modena-design-system";
+      import { defineJfxLabel } from "@autoprint/jfx-modena-components";
+
+      adoptModenaTheme();
+      defineJfxLabel();
+      window.__jfxComponentsReady = true;
+    </script>
+  </head>
+  <body class="jfx-modena-root">
+    <jfx-label id="slot-label">Label</jfx-label>
+    <jfx-label id="text-label" text="Source text"></jfx-label>
+    <jfx-label id="precedence-label" text="Attribute text">Slotted fallback</jfx-label>
+    <jfx-label id="disabled-label" disabled text="Disabled label"></jfx-label>
+    <jfx-label id="underline-label" underline text="Underlined label"></jfx-label>
+    <jfx-label id="wrap-label" wrap-text text="A label with enough text to wrap in constrained layouts"></jfx-label>
+    <jfx-label id="mnemonic-label" show-mnemonics text="_Name"></jfx-label>
+    <jfx-label id="escaped-mnemonic-label" show-mnemonics text="Save__As"></jfx-label>
+    <jfx-label id="label-for" show-mnemonics text="_Name" label-for="fixture-name"></jfx-label>
+    <input id="fixture-name" value="Target input" />
+  </body>
+</html>

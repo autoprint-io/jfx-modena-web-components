@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node --experimental-strip-types \"$(git rev-parse --show-toplevel)/tools/codex/hooks/session-start.ts\"",
+            "timeout": 30,
+            "statusMessage": "Running JFX preflight"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node --experimental-strip-types \"$(git rev-parse --show-toplevel)/tools/codex/hooks/stop.ts\"",
+            "timeout": 60,
+            "statusMessage": "Writing JFX closeout"
+          }
+        ]
+      }
+    ]
+  }
+}

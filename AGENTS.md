@@ -41,6 +41,7 @@ keyboard/focus, accessibility, and browser/runtime evidence.
 - Do not edit generated inventories by hand unless the generator is broken:
   - `packages/components/src/component-status.json`
   - `packages/design-system/src/tokens/derived/modena.derived.tokens.json`
+  - `project-status.generated.json`
 - Keep schema and validator changes together:
   - `schemas/*.schema.json`
   - `tools/validators/*.ts`
@@ -54,6 +55,7 @@ keyboard/focus, accessibility, and browser/runtime evidence.
 For structural/tooling changes, run:
 
 ```bash
+npm run ci
 pnpm typecheck
 pnpm build
 npm run compute:tokens
@@ -70,8 +72,9 @@ npm run viewer:dev
 
 Then verify the served page in a browser and check console errors.
 
-`pnpm test` currently executes package placeholder scripts. Treat it as a smoke
-check only until real tests are implemented.
+`pnpm test` includes real component Playwright tests where implemented, but some
+packages may still expose placeholder test scripts. Report which package tests
+actually ran before treating a test run as behavioral evidence.
 
 ## Component Work
 
@@ -86,6 +89,19 @@ Before changing a component:
 ## Codex Setup
 
 Use the repo-local `$jfx-modena-web-components` skill for project-specific work.
+Use focused repo-local skills when a task matches their scope:
+
+- `$jfx-component-first-pass` for one bounded component implementation.
+- `$jfx-source-authority` for OpenJFX/Modena source ingestion and sync.
+- `$jfx-certification-gates` for readiness and certification-gate audits.
+- `$jfx-viewer-verification` for browser/runtime viewer checks.
+- `$jfx-codex-pipeline` for `tools/codex` prompt, schema, runner, and log work.
+
+Project-scoped custom agents live under `.codex/agents/`. Use them for explicit
+subagent workflows, keeping the main session focused on decisions and integration.
+Project-scoped hooks live in `.codex/hooks.json`; they are advisory and write
+logs under `.codex-runs/hooks/` without replacing manual verification.
+
 Use `llms.txt` for the compact Codex documentation map and `llms-full.txt` only
 when exact Codex configuration behavior is needed.
 
@@ -93,6 +109,12 @@ For repeatable Codex audits, use programmatic prompt tooling instead of ad hoc
 manual prompts:
 
 ```bash
+npm run codex:preflight
+npm run codex:change-classifier
+npm run codex:project-status
+npm run codex:closeout -- --component jfx-button
+npm run codex:handoff -- --component jfx-button
+npm run codex:self-test
 npm run --silent codex:component-profile -- jfx-button
 npm run --silent codex:component-context -- jfx-button
 npm run --silent codex:audit-component -- jfx-button --print-prompt
