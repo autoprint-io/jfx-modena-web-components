@@ -1,0 +1,14 @@
+{
+  "modena": {
+    "theme": {
+      "name": {
+        "$type": "string",
+        "$value": "modena-light"
+      },
+      "status": {
+        "$type": "string",
+        "$value": "initial-button-scope"
+      }
+    }
+  }
+}

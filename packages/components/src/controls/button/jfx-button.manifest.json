@@ -1,0 +1,9 @@
+{
+  "tagName": "jfx-button",
+  "javafxClass": "javafx.scene.control.Button",
+  "javafxStyleClass": "button",
+  "status": "implemented_partial",
+  "attributes": ["default", "disabled", "pressed"],
+  "parts": ["button"],
+  "states": ["default", "hover", "active", "focus-visible", "disabled"]
+}

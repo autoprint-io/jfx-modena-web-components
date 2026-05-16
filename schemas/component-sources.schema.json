@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/component-sources.schema.json",
+  "title": "JFX Modena component sources",
+  "description": "Source traceability metadata for a single jfx-* component. Empty objects are allowed only for scaffold-only components during the bootstrap phase.",
+  "anyOf": [
+    {
+      "type": "object",
+      "maxProperties": 0
+    },
+    {
+      "type": "object",
+      "required": ["tagName", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "tagName": {
+          "type": "string",
+          "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^reference-sources/"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  ]
+}

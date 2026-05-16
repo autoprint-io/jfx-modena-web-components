@@ -1,0 +1,1454 @@
+{
+  "version": 1,
+  "description": "Generated component implementation and certification status inventory.",
+  "counts": {
+    "total": 84,
+    "byStatus": {
+      "implemented_partial": 1,
+      "scaffold_only": 83
+    },
+    "byCategory": {
+      "containers": 19,
+      "shapes": 13,
+      "charts": 8,
+      "controls": 13,
+      "misc": 7,
+      "choices": 4,
+      "menus": 6,
+      "content": 2,
+      "media": 3,
+      "data": 6,
+      "text-inputs": 3
+    }
+  },
+  "components": [
+    {
+      "tagName": "jfx-accordion",
+      "category": "containers",
+      "directory": "packages/components/src/containers/accordion",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/accordion/jfx-accordion.ts",
+        "template": "packages/components/src/containers/accordion/jfx-accordion.template.ts",
+        "styles": "packages/components/src/containers/accordion/jfx-accordion.styles.css",
+        "manifest": "packages/components/src/containers/accordion/jfx-accordion.manifest.json",
+        "sources": "packages/components/src/containers/accordion/jfx-accordion.sources.json",
+        "unitTest": "packages/components/src/containers/accordion/jfx-accordion.test.ts",
+        "accessibilityTest": "packages/components/src/containers/accordion/jfx-accordion.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-anchor-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/anchor-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.ts",
+        "template": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.template.ts",
+        "styles": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.styles.css",
+        "manifest": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.manifest.json",
+        "sources": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.sources.json",
+        "unitTest": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/anchor-pane/jfx-anchor-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-arc",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/arc",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/arc/jfx-arc.ts",
+        "template": "packages/components/src/shapes/arc/jfx-arc.template.ts",
+        "styles": "packages/components/src/shapes/arc/jfx-arc.styles.css",
+        "manifest": "packages/components/src/shapes/arc/jfx-arc.manifest.json",
+        "sources": "packages/components/src/shapes/arc/jfx-arc.sources.json",
+        "unitTest": "packages/components/src/shapes/arc/jfx-arc.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/arc/jfx-arc.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-area-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/area-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/area-chart/jfx-area-chart.ts",
+        "template": "packages/components/src/charts/area-chart/jfx-area-chart.template.ts",
+        "styles": "packages/components/src/charts/area-chart/jfx-area-chart.styles.css",
+        "manifest": "packages/components/src/charts/area-chart/jfx-area-chart.manifest.json",
+        "sources": "packages/components/src/charts/area-chart/jfx-area-chart.sources.json",
+        "unitTest": "packages/components/src/charts/area-chart/jfx-area-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/area-chart/jfx-area-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-bar-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/bar-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/bar-chart/jfx-bar-chart.ts",
+        "template": "packages/components/src/charts/bar-chart/jfx-bar-chart.template.ts",
+        "styles": "packages/components/src/charts/bar-chart/jfx-bar-chart.styles.css",
+        "manifest": "packages/components/src/charts/bar-chart/jfx-bar-chart.manifest.json",
+        "sources": "packages/components/src/charts/bar-chart/jfx-bar-chart.sources.json",
+        "unitTest": "packages/components/src/charts/bar-chart/jfx-bar-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/bar-chart/jfx-bar-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-border-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/border-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/border-pane/jfx-border-pane.ts",
+        "template": "packages/components/src/containers/border-pane/jfx-border-pane.template.ts",
+        "styles": "packages/components/src/containers/border-pane/jfx-border-pane.styles.css",
+        "manifest": "packages/components/src/containers/border-pane/jfx-border-pane.manifest.json",
+        "sources": "packages/components/src/containers/border-pane/jfx-border-pane.sources.json",
+        "unitTest": "packages/components/src/containers/border-pane/jfx-border-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/border-pane/jfx-border-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-box",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/box",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/box/jfx-box.ts",
+        "template": "packages/components/src/shapes/box/jfx-box.template.ts",
+        "styles": "packages/components/src/shapes/box/jfx-box.styles.css",
+        "manifest": "packages/components/src/shapes/box/jfx-box.manifest.json",
+        "sources": "packages/components/src/shapes/box/jfx-box.sources.json",
+        "unitTest": "packages/components/src/shapes/box/jfx-box.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/box/jfx-box.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-bubble-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/bubble-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.ts",
+        "template": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.template.ts",
+        "styles": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.styles.css",
+        "manifest": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.manifest.json",
+        "sources": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.sources.json",
+        "unitTest": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/bubble-chart/jfx-bubble-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-button",
+      "category": "controls",
+      "directory": "packages/components/src/controls/button",
+      "componentStatus": "implemented_partial",
+      "certificationStatus": "not_certified_behavior_visual_a11y_incomplete",
+      "files": {
+        "component": "packages/components/src/controls/button/jfx-button.ts",
+        "template": "packages/components/src/controls/button/jfx-button.template.ts",
+        "styles": "packages/components/src/controls/button/jfx-button.styles.css",
+        "manifest": "packages/components/src/controls/button/jfx-button.manifest.json",
+        "sources": "packages/components/src/controls/button/jfx-button.sources.json",
+        "unitTest": "packages/components/src/controls/button/jfx-button.test.ts",
+        "accessibilityTest": "packages/components/src/controls/button/jfx-button.a11y.test.ts"
+      },
+      "sourceCount": 5
+    },
+    {
+      "tagName": "jfx-button-bar",
+      "category": "containers",
+      "directory": "packages/components/src/containers/button-bar",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/button-bar/jfx-button-bar.ts",
+        "template": "packages/components/src/containers/button-bar/jfx-button-bar.template.ts",
+        "styles": "packages/components/src/containers/button-bar/jfx-button-bar.styles.css",
+        "manifest": "packages/components/src/containers/button-bar/jfx-button-bar.manifest.json",
+        "sources": "packages/components/src/containers/button-bar/jfx-button-bar.sources.json",
+        "unitTest": "packages/components/src/containers/button-bar/jfx-button-bar.test.ts",
+        "accessibilityTest": "packages/components/src/containers/button-bar/jfx-button-bar.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-canvas",
+      "category": "misc",
+      "directory": "packages/components/src/misc/canvas",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/canvas/jfx-canvas.ts",
+        "template": "packages/components/src/misc/canvas/jfx-canvas.template.ts",
+        "styles": "packages/components/src/misc/canvas/jfx-canvas.styles.css",
+        "manifest": "packages/components/src/misc/canvas/jfx-canvas.manifest.json",
+        "sources": "packages/components/src/misc/canvas/jfx-canvas.sources.json",
+        "unitTest": "packages/components/src/misc/canvas/jfx-canvas.test.ts",
+        "accessibilityTest": "packages/components/src/misc/canvas/jfx-canvas.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-checkbox",
+      "category": "controls",
+      "directory": "packages/components/src/controls/checkbox",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/checkbox/jfx-checkbox.ts",
+        "template": "packages/components/src/controls/checkbox/jfx-checkbox.template.ts",
+        "styles": "packages/components/src/controls/checkbox/jfx-checkbox.styles.css",
+        "manifest": "packages/components/src/controls/checkbox/jfx-checkbox.manifest.json",
+        "sources": "packages/components/src/controls/checkbox/jfx-checkbox.sources.json",
+        "unitTest": "packages/components/src/controls/checkbox/jfx-checkbox.test.ts",
+        "accessibilityTest": "packages/components/src/controls/checkbox/jfx-checkbox.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-choice-box",
+      "category": "choices",
+      "directory": "packages/components/src/choices/choice-box",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/choices/choice-box/jfx-choice-box.ts",
+        "template": "packages/components/src/choices/choice-box/jfx-choice-box.template.ts",
+        "styles": "packages/components/src/choices/choice-box/jfx-choice-box.styles.css",
+        "manifest": "packages/components/src/choices/choice-box/jfx-choice-box.manifest.json",
+        "sources": "packages/components/src/choices/choice-box/jfx-choice-box.sources.json",
+        "unitTest": "packages/components/src/choices/choice-box/jfx-choice-box.test.ts",
+        "accessibilityTest": "packages/components/src/choices/choice-box/jfx-choice-box.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-circle",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/circle",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/circle/jfx-circle.ts",
+        "template": "packages/components/src/shapes/circle/jfx-circle.template.ts",
+        "styles": "packages/components/src/shapes/circle/jfx-circle.styles.css",
+        "manifest": "packages/components/src/shapes/circle/jfx-circle.manifest.json",
+        "sources": "packages/components/src/shapes/circle/jfx-circle.sources.json",
+        "unitTest": "packages/components/src/shapes/circle/jfx-circle.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/circle/jfx-circle.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-color-picker",
+      "category": "choices",
+      "directory": "packages/components/src/choices/color-picker",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/choices/color-picker/jfx-color-picker.ts",
+        "template": "packages/components/src/choices/color-picker/jfx-color-picker.template.ts",
+        "styles": "packages/components/src/choices/color-picker/jfx-color-picker.styles.css",
+        "manifest": "packages/components/src/choices/color-picker/jfx-color-picker.manifest.json",
+        "sources": "packages/components/src/choices/color-picker/jfx-color-picker.sources.json",
+        "unitTest": "packages/components/src/choices/color-picker/jfx-color-picker.test.ts",
+        "accessibilityTest": "packages/components/src/choices/color-picker/jfx-color-picker.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-combo-box",
+      "category": "choices",
+      "directory": "packages/components/src/choices/combo-box",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/choices/combo-box/jfx-combo-box.ts",
+        "template": "packages/components/src/choices/combo-box/jfx-combo-box.template.ts",
+        "styles": "packages/components/src/choices/combo-box/jfx-combo-box.styles.css",
+        "manifest": "packages/components/src/choices/combo-box/jfx-combo-box.manifest.json",
+        "sources": "packages/components/src/choices/combo-box/jfx-combo-box.sources.json",
+        "unitTest": "packages/components/src/choices/combo-box/jfx-combo-box.test.ts",
+        "accessibilityTest": "packages/components/src/choices/combo-box/jfx-combo-box.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-context-menu",
+      "category": "menus",
+      "directory": "packages/components/src/menus/context-menu",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/context-menu/jfx-context-menu.ts",
+        "template": "packages/components/src/menus/context-menu/jfx-context-menu.template.ts",
+        "styles": "packages/components/src/menus/context-menu/jfx-context-menu.styles.css",
+        "manifest": "packages/components/src/menus/context-menu/jfx-context-menu.manifest.json",
+        "sources": "packages/components/src/menus/context-menu/jfx-context-menu.sources.json",
+        "unitTest": "packages/components/src/menus/context-menu/jfx-context-menu.test.ts",
+        "accessibilityTest": "packages/components/src/menus/context-menu/jfx-context-menu.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-cylinder",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/cylinder",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/cylinder/jfx-cylinder.ts",
+        "template": "packages/components/src/shapes/cylinder/jfx-cylinder.template.ts",
+        "styles": "packages/components/src/shapes/cylinder/jfx-cylinder.styles.css",
+        "manifest": "packages/components/src/shapes/cylinder/jfx-cylinder.manifest.json",
+        "sources": "packages/components/src/shapes/cylinder/jfx-cylinder.sources.json",
+        "unitTest": "packages/components/src/shapes/cylinder/jfx-cylinder.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/cylinder/jfx-cylinder.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-date-picker",
+      "category": "choices",
+      "directory": "packages/components/src/choices/date-picker",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/choices/date-picker/jfx-date-picker.ts",
+        "template": "packages/components/src/choices/date-picker/jfx-date-picker.template.ts",
+        "styles": "packages/components/src/choices/date-picker/jfx-date-picker.styles.css",
+        "manifest": "packages/components/src/choices/date-picker/jfx-date-picker.manifest.json",
+        "sources": "packages/components/src/choices/date-picker/jfx-date-picker.sources.json",
+        "unitTest": "packages/components/src/choices/date-picker/jfx-date-picker.test.ts",
+        "accessibilityTest": "packages/components/src/choices/date-picker/jfx-date-picker.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-dialog-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/dialog-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.ts",
+        "template": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.template.ts",
+        "styles": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.styles.css",
+        "manifest": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.manifest.json",
+        "sources": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.sources.json",
+        "unitTest": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/dialog-pane/jfx-dialog-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-ellipse",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/ellipse",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/ellipse/jfx-ellipse.ts",
+        "template": "packages/components/src/shapes/ellipse/jfx-ellipse.template.ts",
+        "styles": "packages/components/src/shapes/ellipse/jfx-ellipse.styles.css",
+        "manifest": "packages/components/src/shapes/ellipse/jfx-ellipse.manifest.json",
+        "sources": "packages/components/src/shapes/ellipse/jfx-ellipse.sources.json",
+        "unitTest": "packages/components/src/shapes/ellipse/jfx-ellipse.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/ellipse/jfx-ellipse.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-flow-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/flow-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/flow-pane/jfx-flow-pane.ts",
+        "template": "packages/components/src/containers/flow-pane/jfx-flow-pane.template.ts",
+        "styles": "packages/components/src/containers/flow-pane/jfx-flow-pane.styles.css",
+        "manifest": "packages/components/src/containers/flow-pane/jfx-flow-pane.manifest.json",
+        "sources": "packages/components/src/containers/flow-pane/jfx-flow-pane.sources.json",
+        "unitTest": "packages/components/src/containers/flow-pane/jfx-flow-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/flow-pane/jfx-flow-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-grid-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/grid-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/grid-pane/jfx-grid-pane.ts",
+        "template": "packages/components/src/containers/grid-pane/jfx-grid-pane.template.ts",
+        "styles": "packages/components/src/containers/grid-pane/jfx-grid-pane.styles.css",
+        "manifest": "packages/components/src/containers/grid-pane/jfx-grid-pane.manifest.json",
+        "sources": "packages/components/src/containers/grid-pane/jfx-grid-pane.sources.json",
+        "unitTest": "packages/components/src/containers/grid-pane/jfx-grid-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/grid-pane/jfx-grid-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-group",
+      "category": "misc",
+      "directory": "packages/components/src/misc/group",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/group/jfx-group.ts",
+        "template": "packages/components/src/misc/group/jfx-group.template.ts",
+        "styles": "packages/components/src/misc/group/jfx-group.styles.css",
+        "manifest": "packages/components/src/misc/group/jfx-group.manifest.json",
+        "sources": "packages/components/src/misc/group/jfx-group.sources.json",
+        "unitTest": "packages/components/src/misc/group/jfx-group.test.ts",
+        "accessibilityTest": "packages/components/src/misc/group/jfx-group.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-hbox",
+      "category": "containers",
+      "directory": "packages/components/src/containers/hbox",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/hbox/jfx-hbox.ts",
+        "template": "packages/components/src/containers/hbox/jfx-hbox.template.ts",
+        "styles": "packages/components/src/containers/hbox/jfx-hbox.styles.css",
+        "manifest": "packages/components/src/containers/hbox/jfx-hbox.manifest.json",
+        "sources": "packages/components/src/containers/hbox/jfx-hbox.sources.json",
+        "unitTest": "packages/components/src/containers/hbox/jfx-hbox.test.ts",
+        "accessibilityTest": "packages/components/src/containers/hbox/jfx-hbox.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-html-editor",
+      "category": "content",
+      "directory": "packages/components/src/content/html-editor",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/content/html-editor/jfx-html-editor.ts",
+        "template": "packages/components/src/content/html-editor/jfx-html-editor.template.ts",
+        "styles": "packages/components/src/content/html-editor/jfx-html-editor.styles.css",
+        "manifest": "packages/components/src/content/html-editor/jfx-html-editor.manifest.json",
+        "sources": "packages/components/src/content/html-editor/jfx-html-editor.sources.json",
+        "unitTest": "packages/components/src/content/html-editor/jfx-html-editor.test.ts",
+        "accessibilityTest": "packages/components/src/content/html-editor/jfx-html-editor.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-hyperlink",
+      "category": "controls",
+      "directory": "packages/components/src/controls/hyperlink",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/hyperlink/jfx-hyperlink.ts",
+        "template": "packages/components/src/controls/hyperlink/jfx-hyperlink.template.ts",
+        "styles": "packages/components/src/controls/hyperlink/jfx-hyperlink.styles.css",
+        "manifest": "packages/components/src/controls/hyperlink/jfx-hyperlink.manifest.json",
+        "sources": "packages/components/src/controls/hyperlink/jfx-hyperlink.sources.json",
+        "unitTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.test.ts",
+        "accessibilityTest": "packages/components/src/controls/hyperlink/jfx-hyperlink.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-image-view",
+      "category": "media",
+      "directory": "packages/components/src/media/image-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/media/image-view/jfx-image-view.ts",
+        "template": "packages/components/src/media/image-view/jfx-image-view.template.ts",
+        "styles": "packages/components/src/media/image-view/jfx-image-view.styles.css",
+        "manifest": "packages/components/src/media/image-view/jfx-image-view.manifest.json",
+        "sources": "packages/components/src/media/image-view/jfx-image-view.sources.json",
+        "unitTest": "packages/components/src/media/image-view/jfx-image-view.test.ts",
+        "accessibilityTest": "packages/components/src/media/image-view/jfx-image-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-label",
+      "category": "controls",
+      "directory": "packages/components/src/controls/label",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/label/jfx-label.ts",
+        "template": "packages/components/src/controls/label/jfx-label.template.ts",
+        "styles": "packages/components/src/controls/label/jfx-label.styles.css",
+        "manifest": "packages/components/src/controls/label/jfx-label.manifest.json",
+        "sources": "packages/components/src/controls/label/jfx-label.sources.json",
+        "unitTest": "packages/components/src/controls/label/jfx-label.test.ts",
+        "accessibilityTest": "packages/components/src/controls/label/jfx-label.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-line",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/line",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/line/jfx-line.ts",
+        "template": "packages/components/src/shapes/line/jfx-line.template.ts",
+        "styles": "packages/components/src/shapes/line/jfx-line.styles.css",
+        "manifest": "packages/components/src/shapes/line/jfx-line.manifest.json",
+        "sources": "packages/components/src/shapes/line/jfx-line.sources.json",
+        "unitTest": "packages/components/src/shapes/line/jfx-line.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/line/jfx-line.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-line-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/line-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/line-chart/jfx-line-chart.ts",
+        "template": "packages/components/src/charts/line-chart/jfx-line-chart.template.ts",
+        "styles": "packages/components/src/charts/line-chart/jfx-line-chart.styles.css",
+        "manifest": "packages/components/src/charts/line-chart/jfx-line-chart.manifest.json",
+        "sources": "packages/components/src/charts/line-chart/jfx-line-chart.sources.json",
+        "unitTest": "packages/components/src/charts/line-chart/jfx-line-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/line-chart/jfx-line-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-list-view",
+      "category": "data",
+      "directory": "packages/components/src/data/list-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/list-view/jfx-list-view.ts",
+        "template": "packages/components/src/data/list-view/jfx-list-view.template.ts",
+        "styles": "packages/components/src/data/list-view/jfx-list-view.styles.css",
+        "manifest": "packages/components/src/data/list-view/jfx-list-view.manifest.json",
+        "sources": "packages/components/src/data/list-view/jfx-list-view.sources.json",
+        "unitTest": "packages/components/src/data/list-view/jfx-list-view.test.ts",
+        "accessibilityTest": "packages/components/src/data/list-view/jfx-list-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-media-view",
+      "category": "media",
+      "directory": "packages/components/src/media/media-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/media/media-view/jfx-media-view.ts",
+        "template": "packages/components/src/media/media-view/jfx-media-view.template.ts",
+        "styles": "packages/components/src/media/media-view/jfx-media-view.styles.css",
+        "manifest": "packages/components/src/media/media-view/jfx-media-view.manifest.json",
+        "sources": "packages/components/src/media/media-view/jfx-media-view.sources.json",
+        "unitTest": "packages/components/src/media/media-view/jfx-media-view.test.ts",
+        "accessibilityTest": "packages/components/src/media/media-view/jfx-media-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-menu",
+      "category": "menus",
+      "directory": "packages/components/src/menus/menu",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/menu/jfx-menu.ts",
+        "template": "packages/components/src/menus/menu/jfx-menu.template.ts",
+        "styles": "packages/components/src/menus/menu/jfx-menu.styles.css",
+        "manifest": "packages/components/src/menus/menu/jfx-menu.manifest.json",
+        "sources": "packages/components/src/menus/menu/jfx-menu.sources.json",
+        "unitTest": "packages/components/src/menus/menu/jfx-menu.test.ts",
+        "accessibilityTest": "packages/components/src/menus/menu/jfx-menu.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-menu-bar",
+      "category": "menus",
+      "directory": "packages/components/src/menus/menu-bar",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/menu-bar/jfx-menu-bar.ts",
+        "template": "packages/components/src/menus/menu-bar/jfx-menu-bar.template.ts",
+        "styles": "packages/components/src/menus/menu-bar/jfx-menu-bar.styles.css",
+        "manifest": "packages/components/src/menus/menu-bar/jfx-menu-bar.manifest.json",
+        "sources": "packages/components/src/menus/menu-bar/jfx-menu-bar.sources.json",
+        "unitTest": "packages/components/src/menus/menu-bar/jfx-menu-bar.test.ts",
+        "accessibilityTest": "packages/components/src/menus/menu-bar/jfx-menu-bar.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-menu-button",
+      "category": "menus",
+      "directory": "packages/components/src/menus/menu-button",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/menu-button/jfx-menu-button.ts",
+        "template": "packages/components/src/menus/menu-button/jfx-menu-button.template.ts",
+        "styles": "packages/components/src/menus/menu-button/jfx-menu-button.styles.css",
+        "manifest": "packages/components/src/menus/menu-button/jfx-menu-button.manifest.json",
+        "sources": "packages/components/src/menus/menu-button/jfx-menu-button.sources.json",
+        "unitTest": "packages/components/src/menus/menu-button/jfx-menu-button.test.ts",
+        "accessibilityTest": "packages/components/src/menus/menu-button/jfx-menu-button.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-menu-item",
+      "category": "menus",
+      "directory": "packages/components/src/menus/menu-item",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/menu-item/jfx-menu-item.ts",
+        "template": "packages/components/src/menus/menu-item/jfx-menu-item.template.ts",
+        "styles": "packages/components/src/menus/menu-item/jfx-menu-item.styles.css",
+        "manifest": "packages/components/src/menus/menu-item/jfx-menu-item.manifest.json",
+        "sources": "packages/components/src/menus/menu-item/jfx-menu-item.sources.json",
+        "unitTest": "packages/components/src/menus/menu-item/jfx-menu-item.test.ts",
+        "accessibilityTest": "packages/components/src/menus/menu-item/jfx-menu-item.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-pagination",
+      "category": "controls",
+      "directory": "packages/components/src/controls/pagination",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/pagination/jfx-pagination.ts",
+        "template": "packages/components/src/controls/pagination/jfx-pagination.template.ts",
+        "styles": "packages/components/src/controls/pagination/jfx-pagination.styles.css",
+        "manifest": "packages/components/src/controls/pagination/jfx-pagination.manifest.json",
+        "sources": "packages/components/src/controls/pagination/jfx-pagination.sources.json",
+        "unitTest": "packages/components/src/controls/pagination/jfx-pagination.test.ts",
+        "accessibilityTest": "packages/components/src/controls/pagination/jfx-pagination.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/pane/jfx-pane.ts",
+        "template": "packages/components/src/containers/pane/jfx-pane.template.ts",
+        "styles": "packages/components/src/containers/pane/jfx-pane.styles.css",
+        "manifest": "packages/components/src/containers/pane/jfx-pane.manifest.json",
+        "sources": "packages/components/src/containers/pane/jfx-pane.sources.json",
+        "unitTest": "packages/components/src/containers/pane/jfx-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/pane/jfx-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-password-field",
+      "category": "text-inputs",
+      "directory": "packages/components/src/text-inputs/password-field",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/text-inputs/password-field/jfx-password-field.ts",
+        "template": "packages/components/src/text-inputs/password-field/jfx-password-field.template.ts",
+        "styles": "packages/components/src/text-inputs/password-field/jfx-password-field.styles.css",
+        "manifest": "packages/components/src/text-inputs/password-field/jfx-password-field.manifest.json",
+        "sources": "packages/components/src/text-inputs/password-field/jfx-password-field.sources.json",
+        "unitTest": "packages/components/src/text-inputs/password-field/jfx-password-field.test.ts",
+        "accessibilityTest": "packages/components/src/text-inputs/password-field/jfx-password-field.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-path",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/path",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/path/jfx-path.ts",
+        "template": "packages/components/src/shapes/path/jfx-path.template.ts",
+        "styles": "packages/components/src/shapes/path/jfx-path.styles.css",
+        "manifest": "packages/components/src/shapes/path/jfx-path.manifest.json",
+        "sources": "packages/components/src/shapes/path/jfx-path.sources.json",
+        "unitTest": "packages/components/src/shapes/path/jfx-path.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/path/jfx-path.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-pie-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/pie-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/pie-chart/jfx-pie-chart.ts",
+        "template": "packages/components/src/charts/pie-chart/jfx-pie-chart.template.ts",
+        "styles": "packages/components/src/charts/pie-chart/jfx-pie-chart.styles.css",
+        "manifest": "packages/components/src/charts/pie-chart/jfx-pie-chart.manifest.json",
+        "sources": "packages/components/src/charts/pie-chart/jfx-pie-chart.sources.json",
+        "unitTest": "packages/components/src/charts/pie-chart/jfx-pie-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/pie-chart/jfx-pie-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-polygon",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/polygon",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/polygon/jfx-polygon.ts",
+        "template": "packages/components/src/shapes/polygon/jfx-polygon.template.ts",
+        "styles": "packages/components/src/shapes/polygon/jfx-polygon.styles.css",
+        "manifest": "packages/components/src/shapes/polygon/jfx-polygon.manifest.json",
+        "sources": "packages/components/src/shapes/polygon/jfx-polygon.sources.json",
+        "unitTest": "packages/components/src/shapes/polygon/jfx-polygon.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/polygon/jfx-polygon.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-polyline",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/polyline",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/polyline/jfx-polyline.ts",
+        "template": "packages/components/src/shapes/polyline/jfx-polyline.template.ts",
+        "styles": "packages/components/src/shapes/polyline/jfx-polyline.styles.css",
+        "manifest": "packages/components/src/shapes/polyline/jfx-polyline.manifest.json",
+        "sources": "packages/components/src/shapes/polyline/jfx-polyline.sources.json",
+        "unitTest": "packages/components/src/shapes/polyline/jfx-polyline.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/polyline/jfx-polyline.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-progress-bar",
+      "category": "controls",
+      "directory": "packages/components/src/controls/progress-bar",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/progress-bar/jfx-progress-bar.ts",
+        "template": "packages/components/src/controls/progress-bar/jfx-progress-bar.template.ts",
+        "styles": "packages/components/src/controls/progress-bar/jfx-progress-bar.styles.css",
+        "manifest": "packages/components/src/controls/progress-bar/jfx-progress-bar.manifest.json",
+        "sources": "packages/components/src/controls/progress-bar/jfx-progress-bar.sources.json",
+        "unitTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.test.ts",
+        "accessibilityTest": "packages/components/src/controls/progress-bar/jfx-progress-bar.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-progress-indicator",
+      "category": "controls",
+      "directory": "packages/components/src/controls/progress-indicator",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.ts",
+        "template": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.template.ts",
+        "styles": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.styles.css",
+        "manifest": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.manifest.json",
+        "sources": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.sources.json",
+        "unitTest": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.test.ts",
+        "accessibilityTest": "packages/components/src/controls/progress-indicator/jfx-progress-indicator.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-radio-button",
+      "category": "controls",
+      "directory": "packages/components/src/controls/radio-button",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/radio-button/jfx-radio-button.ts",
+        "template": "packages/components/src/controls/radio-button/jfx-radio-button.template.ts",
+        "styles": "packages/components/src/controls/radio-button/jfx-radio-button.styles.css",
+        "manifest": "packages/components/src/controls/radio-button/jfx-radio-button.manifest.json",
+        "sources": "packages/components/src/controls/radio-button/jfx-radio-button.sources.json",
+        "unitTest": "packages/components/src/controls/radio-button/jfx-radio-button.test.ts",
+        "accessibilityTest": "packages/components/src/controls/radio-button/jfx-radio-button.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-rectangle",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/rectangle",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/rectangle/jfx-rectangle.ts",
+        "template": "packages/components/src/shapes/rectangle/jfx-rectangle.template.ts",
+        "styles": "packages/components/src/shapes/rectangle/jfx-rectangle.styles.css",
+        "manifest": "packages/components/src/shapes/rectangle/jfx-rectangle.manifest.json",
+        "sources": "packages/components/src/shapes/rectangle/jfx-rectangle.sources.json",
+        "unitTest": "packages/components/src/shapes/rectangle/jfx-rectangle.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/rectangle/jfx-rectangle.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-region",
+      "category": "misc",
+      "directory": "packages/components/src/misc/region",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/region/jfx-region.ts",
+        "template": "packages/components/src/misc/region/jfx-region.template.ts",
+        "styles": "packages/components/src/misc/region/jfx-region.styles.css",
+        "manifest": "packages/components/src/misc/region/jfx-region.manifest.json",
+        "sources": "packages/components/src/misc/region/jfx-region.sources.json",
+        "unitTest": "packages/components/src/misc/region/jfx-region.test.ts",
+        "accessibilityTest": "packages/components/src/misc/region/jfx-region.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-scatter-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/scatter-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.ts",
+        "template": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.template.ts",
+        "styles": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.styles.css",
+        "manifest": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.manifest.json",
+        "sources": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.sources.json",
+        "unitTest": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/scatter-chart/jfx-scatter-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-scene",
+      "category": "misc",
+      "directory": "packages/components/src/misc/scene",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/scene/jfx-scene.ts",
+        "template": "packages/components/src/misc/scene/jfx-scene.template.ts",
+        "styles": "packages/components/src/misc/scene/jfx-scene.styles.css",
+        "manifest": "packages/components/src/misc/scene/jfx-scene.manifest.json",
+        "sources": "packages/components/src/misc/scene/jfx-scene.sources.json",
+        "unitTest": "packages/components/src/misc/scene/jfx-scene.test.ts",
+        "accessibilityTest": "packages/components/src/misc/scene/jfx-scene.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-scroll-bar",
+      "category": "controls",
+      "directory": "packages/components/src/controls/scroll-bar",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.ts",
+        "template": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.template.ts",
+        "styles": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.styles.css",
+        "manifest": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.manifest.json",
+        "sources": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.sources.json",
+        "unitTest": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.test.ts",
+        "accessibilityTest": "packages/components/src/controls/scroll-bar/jfx-scroll-bar.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-scroll-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/scroll-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.ts",
+        "template": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.template.ts",
+        "styles": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.styles.css",
+        "manifest": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.manifest.json",
+        "sources": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.sources.json",
+        "unitTest": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/scroll-pane/jfx-scroll-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-separator",
+      "category": "controls",
+      "directory": "packages/components/src/controls/separator",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/separator/jfx-separator.ts",
+        "template": "packages/components/src/controls/separator/jfx-separator.template.ts",
+        "styles": "packages/components/src/controls/separator/jfx-separator.styles.css",
+        "manifest": "packages/components/src/controls/separator/jfx-separator.manifest.json",
+        "sources": "packages/components/src/controls/separator/jfx-separator.sources.json",
+        "unitTest": "packages/components/src/controls/separator/jfx-separator.test.ts",
+        "accessibilityTest": "packages/components/src/controls/separator/jfx-separator.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-slider",
+      "category": "controls",
+      "directory": "packages/components/src/controls/slider",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/slider/jfx-slider.ts",
+        "template": "packages/components/src/controls/slider/jfx-slider.template.ts",
+        "styles": "packages/components/src/controls/slider/jfx-slider.styles.css",
+        "manifest": "packages/components/src/controls/slider/jfx-slider.manifest.json",
+        "sources": "packages/components/src/controls/slider/jfx-slider.sources.json",
+        "unitTest": "packages/components/src/controls/slider/jfx-slider.test.ts",
+        "accessibilityTest": "packages/components/src/controls/slider/jfx-slider.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-sphere",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/sphere",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/sphere/jfx-sphere.ts",
+        "template": "packages/components/src/shapes/sphere/jfx-sphere.template.ts",
+        "styles": "packages/components/src/shapes/sphere/jfx-sphere.styles.css",
+        "manifest": "packages/components/src/shapes/sphere/jfx-sphere.manifest.json",
+        "sources": "packages/components/src/shapes/sphere/jfx-sphere.sources.json",
+        "unitTest": "packages/components/src/shapes/sphere/jfx-sphere.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/sphere/jfx-sphere.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-spinner",
+      "category": "controls",
+      "directory": "packages/components/src/controls/spinner",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/spinner/jfx-spinner.ts",
+        "template": "packages/components/src/controls/spinner/jfx-spinner.template.ts",
+        "styles": "packages/components/src/controls/spinner/jfx-spinner.styles.css",
+        "manifest": "packages/components/src/controls/spinner/jfx-spinner.manifest.json",
+        "sources": "packages/components/src/controls/spinner/jfx-spinner.sources.json",
+        "unitTest": "packages/components/src/controls/spinner/jfx-spinner.test.ts",
+        "accessibilityTest": "packages/components/src/controls/spinner/jfx-spinner.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-split-menu-button",
+      "category": "menus",
+      "directory": "packages/components/src/menus/split-menu-button",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.ts",
+        "template": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.template.ts",
+        "styles": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.styles.css",
+        "manifest": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.manifest.json",
+        "sources": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.sources.json",
+        "unitTest": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.test.ts",
+        "accessibilityTest": "packages/components/src/menus/split-menu-button/jfx-split-menu-button.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-split-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/split-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/split-pane/jfx-split-pane.ts",
+        "template": "packages/components/src/containers/split-pane/jfx-split-pane.template.ts",
+        "styles": "packages/components/src/containers/split-pane/jfx-split-pane.styles.css",
+        "manifest": "packages/components/src/containers/split-pane/jfx-split-pane.manifest.json",
+        "sources": "packages/components/src/containers/split-pane/jfx-split-pane.sources.json",
+        "unitTest": "packages/components/src/containers/split-pane/jfx-split-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/split-pane/jfx-split-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-stack-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/stack-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/stack-pane/jfx-stack-pane.ts",
+        "template": "packages/components/src/containers/stack-pane/jfx-stack-pane.template.ts",
+        "styles": "packages/components/src/containers/stack-pane/jfx-stack-pane.styles.css",
+        "manifest": "packages/components/src/containers/stack-pane/jfx-stack-pane.manifest.json",
+        "sources": "packages/components/src/containers/stack-pane/jfx-stack-pane.sources.json",
+        "unitTest": "packages/components/src/containers/stack-pane/jfx-stack-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/stack-pane/jfx-stack-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-stacked-area-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/stacked-area-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.ts",
+        "template": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.template.ts",
+        "styles": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.styles.css",
+        "manifest": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.manifest.json",
+        "sources": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.sources.json",
+        "unitTest": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/stacked-area-chart/jfx-stacked-area-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-stacked-bar-chart",
+      "category": "charts",
+      "directory": "packages/components/src/charts/stacked-bar-chart",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.ts",
+        "template": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.template.ts",
+        "styles": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.styles.css",
+        "manifest": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.manifest.json",
+        "sources": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.sources.json",
+        "unitTest": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.test.ts",
+        "accessibilityTest": "packages/components/src/charts/stacked-bar-chart/jfx-stacked-bar-chart.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-stage",
+      "category": "misc",
+      "directory": "packages/components/src/misc/stage",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/stage/jfx-stage.ts",
+        "template": "packages/components/src/misc/stage/jfx-stage.template.ts",
+        "styles": "packages/components/src/misc/stage/jfx-stage.styles.css",
+        "manifest": "packages/components/src/misc/stage/jfx-stage.manifest.json",
+        "sources": "packages/components/src/misc/stage/jfx-stage.sources.json",
+        "unitTest": "packages/components/src/misc/stage/jfx-stage.test.ts",
+        "accessibilityTest": "packages/components/src/misc/stage/jfx-stage.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-sub-scene",
+      "category": "misc",
+      "directory": "packages/components/src/misc/sub-scene",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/sub-scene/jfx-sub-scene.ts",
+        "template": "packages/components/src/misc/sub-scene/jfx-sub-scene.template.ts",
+        "styles": "packages/components/src/misc/sub-scene/jfx-sub-scene.styles.css",
+        "manifest": "packages/components/src/misc/sub-scene/jfx-sub-scene.manifest.json",
+        "sources": "packages/components/src/misc/sub-scene/jfx-sub-scene.sources.json",
+        "unitTest": "packages/components/src/misc/sub-scene/jfx-sub-scene.test.ts",
+        "accessibilityTest": "packages/components/src/misc/sub-scene/jfx-sub-scene.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-svg-path",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/svg-path",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/svg-path/jfx-svg-path.ts",
+        "template": "packages/components/src/shapes/svg-path/jfx-svg-path.template.ts",
+        "styles": "packages/components/src/shapes/svg-path/jfx-svg-path.styles.css",
+        "manifest": "packages/components/src/shapes/svg-path/jfx-svg-path.manifest.json",
+        "sources": "packages/components/src/shapes/svg-path/jfx-svg-path.sources.json",
+        "unitTest": "packages/components/src/shapes/svg-path/jfx-svg-path.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/svg-path/jfx-svg-path.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-swing-node",
+      "category": "misc",
+      "directory": "packages/components/src/misc/swing-node",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/misc/swing-node/jfx-swing-node.ts",
+        "template": "packages/components/src/misc/swing-node/jfx-swing-node.template.ts",
+        "styles": "packages/components/src/misc/swing-node/jfx-swing-node.styles.css",
+        "manifest": "packages/components/src/misc/swing-node/jfx-swing-node.manifest.json",
+        "sources": "packages/components/src/misc/swing-node/jfx-swing-node.sources.json",
+        "unitTest": "packages/components/src/misc/swing-node/jfx-swing-node.test.ts",
+        "accessibilityTest": "packages/components/src/misc/swing-node/jfx-swing-node.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tab",
+      "category": "containers",
+      "directory": "packages/components/src/containers/tab",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/tab/jfx-tab.ts",
+        "template": "packages/components/src/containers/tab/jfx-tab.template.ts",
+        "styles": "packages/components/src/containers/tab/jfx-tab.styles.css",
+        "manifest": "packages/components/src/containers/tab/jfx-tab.manifest.json",
+        "sources": "packages/components/src/containers/tab/jfx-tab.sources.json",
+        "unitTest": "packages/components/src/containers/tab/jfx-tab.test.ts",
+        "accessibilityTest": "packages/components/src/containers/tab/jfx-tab.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tab-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/tab-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/tab-pane/jfx-tab-pane.ts",
+        "template": "packages/components/src/containers/tab-pane/jfx-tab-pane.template.ts",
+        "styles": "packages/components/src/containers/tab-pane/jfx-tab-pane.styles.css",
+        "manifest": "packages/components/src/containers/tab-pane/jfx-tab-pane.manifest.json",
+        "sources": "packages/components/src/containers/tab-pane/jfx-tab-pane.sources.json",
+        "unitTest": "packages/components/src/containers/tab-pane/jfx-tab-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/tab-pane/jfx-tab-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-table-column",
+      "category": "data",
+      "directory": "packages/components/src/data/table-column",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/table-column/jfx-table-column.ts",
+        "template": "packages/components/src/data/table-column/jfx-table-column.template.ts",
+        "styles": "packages/components/src/data/table-column/jfx-table-column.styles.css",
+        "manifest": "packages/components/src/data/table-column/jfx-table-column.manifest.json",
+        "sources": "packages/components/src/data/table-column/jfx-table-column.sources.json",
+        "unitTest": "packages/components/src/data/table-column/jfx-table-column.test.ts",
+        "accessibilityTest": "packages/components/src/data/table-column/jfx-table-column.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-table-view",
+      "category": "data",
+      "directory": "packages/components/src/data/table-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/table-view/jfx-table-view.ts",
+        "template": "packages/components/src/data/table-view/jfx-table-view.template.ts",
+        "styles": "packages/components/src/data/table-view/jfx-table-view.styles.css",
+        "manifest": "packages/components/src/data/table-view/jfx-table-view.manifest.json",
+        "sources": "packages/components/src/data/table-view/jfx-table-view.sources.json",
+        "unitTest": "packages/components/src/data/table-view/jfx-table-view.test.ts",
+        "accessibilityTest": "packages/components/src/data/table-view/jfx-table-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-text",
+      "category": "shapes",
+      "directory": "packages/components/src/shapes/text",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/shapes/text/jfx-text.ts",
+        "template": "packages/components/src/shapes/text/jfx-text.template.ts",
+        "styles": "packages/components/src/shapes/text/jfx-text.styles.css",
+        "manifest": "packages/components/src/shapes/text/jfx-text.manifest.json",
+        "sources": "packages/components/src/shapes/text/jfx-text.sources.json",
+        "unitTest": "packages/components/src/shapes/text/jfx-text.test.ts",
+        "accessibilityTest": "packages/components/src/shapes/text/jfx-text.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-text-area",
+      "category": "text-inputs",
+      "directory": "packages/components/src/text-inputs/text-area",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/text-inputs/text-area/jfx-text-area.ts",
+        "template": "packages/components/src/text-inputs/text-area/jfx-text-area.template.ts",
+        "styles": "packages/components/src/text-inputs/text-area/jfx-text-area.styles.css",
+        "manifest": "packages/components/src/text-inputs/text-area/jfx-text-area.manifest.json",
+        "sources": "packages/components/src/text-inputs/text-area/jfx-text-area.sources.json",
+        "unitTest": "packages/components/src/text-inputs/text-area/jfx-text-area.test.ts",
+        "accessibilityTest": "packages/components/src/text-inputs/text-area/jfx-text-area.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-text-field",
+      "category": "text-inputs",
+      "directory": "packages/components/src/text-inputs/text-field",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/text-inputs/text-field/jfx-text-field.ts",
+        "template": "packages/components/src/text-inputs/text-field/jfx-text-field.template.ts",
+        "styles": "packages/components/src/text-inputs/text-field/jfx-text-field.styles.css",
+        "manifest": "packages/components/src/text-inputs/text-field/jfx-text-field.manifest.json",
+        "sources": "packages/components/src/text-inputs/text-field/jfx-text-field.sources.json",
+        "unitTest": "packages/components/src/text-inputs/text-field/jfx-text-field.test.ts",
+        "accessibilityTest": "packages/components/src/text-inputs/text-field/jfx-text-field.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-text-flow",
+      "category": "containers",
+      "directory": "packages/components/src/containers/text-flow",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/text-flow/jfx-text-flow.ts",
+        "template": "packages/components/src/containers/text-flow/jfx-text-flow.template.ts",
+        "styles": "packages/components/src/containers/text-flow/jfx-text-flow.styles.css",
+        "manifest": "packages/components/src/containers/text-flow/jfx-text-flow.manifest.json",
+        "sources": "packages/components/src/containers/text-flow/jfx-text-flow.sources.json",
+        "unitTest": "packages/components/src/containers/text-flow/jfx-text-flow.test.ts",
+        "accessibilityTest": "packages/components/src/containers/text-flow/jfx-text-flow.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tile-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/tile-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/tile-pane/jfx-tile-pane.ts",
+        "template": "packages/components/src/containers/tile-pane/jfx-tile-pane.template.ts",
+        "styles": "packages/components/src/containers/tile-pane/jfx-tile-pane.styles.css",
+        "manifest": "packages/components/src/containers/tile-pane/jfx-tile-pane.manifest.json",
+        "sources": "packages/components/src/containers/tile-pane/jfx-tile-pane.sources.json",
+        "unitTest": "packages/components/src/containers/tile-pane/jfx-tile-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/tile-pane/jfx-tile-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-titled-pane",
+      "category": "containers",
+      "directory": "packages/components/src/containers/titled-pane",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/titled-pane/jfx-titled-pane.ts",
+        "template": "packages/components/src/containers/titled-pane/jfx-titled-pane.template.ts",
+        "styles": "packages/components/src/containers/titled-pane/jfx-titled-pane.styles.css",
+        "manifest": "packages/components/src/containers/titled-pane/jfx-titled-pane.manifest.json",
+        "sources": "packages/components/src/containers/titled-pane/jfx-titled-pane.sources.json",
+        "unitTest": "packages/components/src/containers/titled-pane/jfx-titled-pane.test.ts",
+        "accessibilityTest": "packages/components/src/containers/titled-pane/jfx-titled-pane.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-toggle-button",
+      "category": "controls",
+      "directory": "packages/components/src/controls/toggle-button",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/controls/toggle-button/jfx-toggle-button.ts",
+        "template": "packages/components/src/controls/toggle-button/jfx-toggle-button.template.ts",
+        "styles": "packages/components/src/controls/toggle-button/jfx-toggle-button.styles.css",
+        "manifest": "packages/components/src/controls/toggle-button/jfx-toggle-button.manifest.json",
+        "sources": "packages/components/src/controls/toggle-button/jfx-toggle-button.sources.json",
+        "unitTest": "packages/components/src/controls/toggle-button/jfx-toggle-button.test.ts",
+        "accessibilityTest": "packages/components/src/controls/toggle-button/jfx-toggle-button.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tool-bar",
+      "category": "containers",
+      "directory": "packages/components/src/containers/tool-bar",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/tool-bar/jfx-tool-bar.ts",
+        "template": "packages/components/src/containers/tool-bar/jfx-tool-bar.template.ts",
+        "styles": "packages/components/src/containers/tool-bar/jfx-tool-bar.styles.css",
+        "manifest": "packages/components/src/containers/tool-bar/jfx-tool-bar.manifest.json",
+        "sources": "packages/components/src/containers/tool-bar/jfx-tool-bar.sources.json",
+        "unitTest": "packages/components/src/containers/tool-bar/jfx-tool-bar.test.ts",
+        "accessibilityTest": "packages/components/src/containers/tool-bar/jfx-tool-bar.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tooltip",
+      "category": "content",
+      "directory": "packages/components/src/content/tooltip",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/content/tooltip/jfx-tooltip.ts",
+        "template": "packages/components/src/content/tooltip/jfx-tooltip.template.ts",
+        "styles": "packages/components/src/content/tooltip/jfx-tooltip.styles.css",
+        "manifest": "packages/components/src/content/tooltip/jfx-tooltip.manifest.json",
+        "sources": "packages/components/src/content/tooltip/jfx-tooltip.sources.json",
+        "unitTest": "packages/components/src/content/tooltip/jfx-tooltip.test.ts",
+        "accessibilityTest": "packages/components/src/content/tooltip/jfx-tooltip.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tree-table-column",
+      "category": "data",
+      "directory": "packages/components/src/data/tree-table-column",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/tree-table-column/jfx-tree-table-column.ts",
+        "template": "packages/components/src/data/tree-table-column/jfx-tree-table-column.template.ts",
+        "styles": "packages/components/src/data/tree-table-column/jfx-tree-table-column.styles.css",
+        "manifest": "packages/components/src/data/tree-table-column/jfx-tree-table-column.manifest.json",
+        "sources": "packages/components/src/data/tree-table-column/jfx-tree-table-column.sources.json",
+        "unitTest": "packages/components/src/data/tree-table-column/jfx-tree-table-column.test.ts",
+        "accessibilityTest": "packages/components/src/data/tree-table-column/jfx-tree-table-column.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tree-table-view",
+      "category": "data",
+      "directory": "packages/components/src/data/tree-table-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/tree-table-view/jfx-tree-table-view.ts",
+        "template": "packages/components/src/data/tree-table-view/jfx-tree-table-view.template.ts",
+        "styles": "packages/components/src/data/tree-table-view/jfx-tree-table-view.styles.css",
+        "manifest": "packages/components/src/data/tree-table-view/jfx-tree-table-view.manifest.json",
+        "sources": "packages/components/src/data/tree-table-view/jfx-tree-table-view.sources.json",
+        "unitTest": "packages/components/src/data/tree-table-view/jfx-tree-table-view.test.ts",
+        "accessibilityTest": "packages/components/src/data/tree-table-view/jfx-tree-table-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-tree-view",
+      "category": "data",
+      "directory": "packages/components/src/data/tree-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/data/tree-view/jfx-tree-view.ts",
+        "template": "packages/components/src/data/tree-view/jfx-tree-view.template.ts",
+        "styles": "packages/components/src/data/tree-view/jfx-tree-view.styles.css",
+        "manifest": "packages/components/src/data/tree-view/jfx-tree-view.manifest.json",
+        "sources": "packages/components/src/data/tree-view/jfx-tree-view.sources.json",
+        "unitTest": "packages/components/src/data/tree-view/jfx-tree-view.test.ts",
+        "accessibilityTest": "packages/components/src/data/tree-view/jfx-tree-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-vbox",
+      "category": "containers",
+      "directory": "packages/components/src/containers/vbox",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/containers/vbox/jfx-vbox.ts",
+        "template": "packages/components/src/containers/vbox/jfx-vbox.template.ts",
+        "styles": "packages/components/src/containers/vbox/jfx-vbox.styles.css",
+        "manifest": "packages/components/src/containers/vbox/jfx-vbox.manifest.json",
+        "sources": "packages/components/src/containers/vbox/jfx-vbox.sources.json",
+        "unitTest": "packages/components/src/containers/vbox/jfx-vbox.test.ts",
+        "accessibilityTest": "packages/components/src/containers/vbox/jfx-vbox.a11y.test.ts"
+      },
+      "sourceCount": 0
+    },
+    {
+      "tagName": "jfx-web-view",
+      "category": "media",
+      "directory": "packages/components/src/media/web-view",
+      "componentStatus": "scaffold_only",
+      "certificationStatus": "missing_implementation",
+      "files": {
+        "component": "packages/components/src/media/web-view/jfx-web-view.ts",
+        "template": "packages/components/src/media/web-view/jfx-web-view.template.ts",
+        "styles": "packages/components/src/media/web-view/jfx-web-view.styles.css",
+        "manifest": "packages/components/src/media/web-view/jfx-web-view.manifest.json",
+        "sources": "packages/components/src/media/web-view/jfx-web-view.sources.json",
+        "unitTest": "packages/components/src/media/web-view/jfx-web-view.test.ts",
+        "accessibilityTest": "packages/components/src/media/web-view/jfx-web-view.a11y.test.ts"
+      },
+      "sourceCount": 0
+    }
+  ]
+}

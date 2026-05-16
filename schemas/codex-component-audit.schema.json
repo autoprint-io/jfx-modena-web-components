@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-component-audit.schema.json",
+  "title": "Codex component audit result",
+  "type": "object",
+  "required": [
+    "component",
+    "currentStatus",
+    "certificationStatus",
+    "summary",
+    "sourceTraceability",
+    "implementationGaps",
+    "behaviorGaps",
+    "accessibilityGaps",
+    "visualGaps",
+    "recommendedNextSteps",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "currentStatus": {
+      "type": "string",
+      "enum": ["scaffold_only", "implemented_partial"]
+    },
+    "certificationStatus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceTraceability": {
+      "type": "object",
+      "required": ["status", "gaps"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["complete_for_current_scope", "incomplete", "missing"]
+        },
+        "gaps": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "implementationGaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "behaviorGaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "accessibilityGaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "visualGaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommendedNextSteps": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH"]
+    }
+  }
+}

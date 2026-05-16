@@ -1,0 +1,20 @@
+{
+  "name": "@autoprint/jfx-modena-design-system",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "development": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "echo \"No tests configured yet\"",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

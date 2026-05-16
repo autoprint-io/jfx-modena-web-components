@@ -1,0 +1,14 @@
+{
+  "modena": {
+    "typography": {
+      "fontFamily": {
+        "$type": "fontFamily",
+        "$value": ["Segoe UI", "SF Pro Text", "system-ui", "sans-serif"]
+      },
+      "baseFontSize": {
+        "$type": "dimension",
+        "$value": "12px"
+      }
+    }
+  }
+}

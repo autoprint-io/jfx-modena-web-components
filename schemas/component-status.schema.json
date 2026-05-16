@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/component-status.schema.json",
+  "title": "JFX Modena generated component status inventory",
+  "type": "object",
+  "required": ["version", "description", "counts", "components"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "counts": {
+      "type": "object",
+      "required": ["total", "byStatus", "byCategory"],
+      "additionalProperties": false,
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "byStatus": {
+          "type": "object",
+          "required": ["implemented_partial", "scaffold_only"],
+          "additionalProperties": false,
+          "properties": {
+            "implemented_partial": { "type": "integer", "minimum": 0 },
+            "scaffold_only": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "byCategory": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tagName",
+          "category",
+          "directory",
+          "componentStatus",
+          "certificationStatus",
+          "files",
+          "sourceCount"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "tagName": {
+            "type": "string",
+            "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "category": { "type": "string", "minLength": 1 },
+          "directory": { "type": "string", "minLength": 1 },
+          "componentStatus": {
+            "type": "string",
+            "enum": ["implemented_partial", "scaffold_only"]
+          },
+          "certificationStatus": {
+            "type": "string",
+            "enum": ["not_certified_behavior_visual_a11y_incomplete", "missing_implementation"]
+          },
+          "files": {
+            "type": "object",
+            "required": [
+              "component",
+              "template",
+              "styles",
+              "manifest",
+              "sources",
+              "unitTest",
+              "accessibilityTest"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "component": { "type": ["string", "null"] },
+              "template": { "type": ["string", "null"] },
+              "styles": { "type": ["string", "null"] },
+              "manifest": { "type": "string", "minLength": 1 },
+              "sources": { "type": ["string", "null"] },
+              "unitTest": { "type": ["string", "null"] },
+              "accessibilityTest": { "type": ["string", "null"] }
+            }
+          },
+          "sourceCount": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

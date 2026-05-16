@@ -1,0 +1,15 @@
+{
+  "name": "@autoprint/jfx-modena-viewer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@autoprint/jfx-modena-components": "workspace:*",
+    "@autoprint/jfx-modena-design-system": "workspace:*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  }
+}

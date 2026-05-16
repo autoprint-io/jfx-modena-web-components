@@ -1,0 +1,30 @@
+# Project-scoped Codex defaults for jfx-modena-web-components.
+# This file loads only when Codex trusts the project.
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+project_root_markers = ["pnpm-workspace.yaml", ".git"]
+project_doc_max_bytes = 65536
+project_doc_fallback_filenames = ["README.md"]
+
+web_search = "cached"
+file_opener = "vscode"
+
+[features]
+hooks = true
+memories = true
+multi_agent = true
+shell_snapshot = true
+unified_exec = true
+
+[sandbox_workspace_write]
+writable_roots = []
+network_access = false
+exclude_tmpdir_env_var = false
+exclude_slash_tmp = false
+
+[tui]
+notifications = false
+animations = true
+show_tooltips = true

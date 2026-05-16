@@ -1,0 +1,605 @@
+{
+  "version": 1,
+  "description": "Initial curated source allowlist for the JavaFX Modena Web Components port.",
+  "normalizedRoot": "reference-inputs/normalized",
+  "outputRoot": "reference-sources",
+  "entries": [
+    {
+      "kind": "modena-css",
+      "cleanPath": "openjfx/modena/modena.css",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena.css.md",
+      "localPath": "reference-inputs/openjfx/modena.css",
+      "componentTags": [
+        "jfx-theme-modena"
+      ]
+    },
+    {
+      "kind": "modena-css",
+      "cleanPath": "openjfx/modena/touch.css",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/touch.css.md",
+      "componentTags": [
+        "jfx-theme-modena"
+      ]
+    },
+    {
+      "kind": "modena-css",
+      "cleanPath": "openjfx/modena/two-level-focus.css",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/two-level-focus.css.md",
+      "componentTags": [
+        "jfx-theme-modena"
+      ]
+    },
+    {
+      "kind": "modena-css",
+      "cleanPath": "openjfx/modena/modena-no-transparency.css",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena-no-transparency.css.md",
+      "componentTags": [
+        "jfx-theme-modena"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/scene/Node.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.graphics/src/main/java/javafx/scene/Node.java.md",
+      "componentTags": [
+        "jfx-common"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/scene/Parent.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.graphics/src/main/java/javafx/scene/Parent.java.md",
+      "componentTags": [
+        "jfx-common"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/layout/Region.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.graphics/src/main/java/javafx/scene/layout/Region.java.md",
+      "componentTags": [
+        "jfx-common",
+        "jfx-region"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/Control.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Control.java.md",
+      "componentTags": [
+        "jfx-common"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/Skin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Skin.java.md",
+      "componentTags": [
+        "jfx-common"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/SkinBase.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/SkinBase.java.md",
+      "componentTags": [
+        "jfx-common"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/ButtonBase.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java.md",
+      "componentTags": [
+        "jfx-button",
+        "jfx-toggle-button",
+        "jfx-menu-button",
+        "jfx-split-menu-button"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/Labeled.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java.md",
+      "componentTags": [
+        "jfx-label",
+        "jfx-button",
+        "jfx-checkbox",
+        "jfx-radio-button",
+        "jfx-hyperlink"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Button.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Button.java.md",
+      "componentTags": [
+        "jfx-button"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ButtonSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ButtonSkin.java.md",
+      "componentTags": [
+        "jfx-button"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/Button.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Button.fxml.md",
+      "componentTags": [
+        "jfx-button"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ToggleButton.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ToggleButton.java.md",
+      "componentTags": [
+        "jfx-toggle-button"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ToggleButtonSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ToggleButtonSkin.java.md",
+      "componentTags": [
+        "jfx-toggle-button"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ToggleButton.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ToggleButton.fxml.md",
+      "componentTags": [
+        "jfx-toggle-button"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/CheckBox.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/CheckBox.java.md",
+      "componentTags": [
+        "jfx-checkbox"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/CheckBoxSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/CheckBoxSkin.java.md",
+      "componentTags": [
+        "jfx-checkbox"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/CheckBox.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/CheckBox.fxml.md",
+      "componentTags": [
+        "jfx-checkbox"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/RadioButton.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/RadioButton.java.md",
+      "componentTags": [
+        "jfx-radio-button"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/RadioButtonSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/RadioButtonSkin.java.md",
+      "componentTags": [
+        "jfx-radio-button"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/RadioButton.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/RadioButton.fxml.md",
+      "componentTags": [
+        "jfx-radio-button"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Label.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Label.java.md",
+      "componentTags": [
+        "jfx-label"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/LabelSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/LabelSkin.java.md",
+      "componentTags": [
+        "jfx-label"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/Label.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Label.fxml.md",
+      "componentTags": [
+        "jfx-label"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Hyperlink.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Hyperlink.java.md",
+      "componentTags": [
+        "jfx-hyperlink"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/HyperlinkSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/HyperlinkSkin.java.md",
+      "componentTags": [
+        "jfx-hyperlink"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/Hyperlink.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Hyperlink.fxml.md",
+      "componentTags": [
+        "jfx-hyperlink"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Separator.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Separator.java.md",
+      "componentTags": [
+        "jfx-separator"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/SeparatorSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SeparatorSkin.java.md",
+      "componentTags": [
+        "jfx-separator"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/SeparatorH.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorH.fxml.md",
+      "componentTags": [
+        "jfx-separator"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/SeparatorV.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorV.fxml.md",
+      "componentTags": [
+        "jfx-separator"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ProgressBar.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressBar.java.md",
+      "componentTags": [
+        "jfx-progress-bar"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ProgressBarSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressBarSkin.java.md",
+      "componentTags": [
+        "jfx-progress-bar"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ProgressBar.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressBar.fxml.md",
+      "componentTags": [
+        "jfx-progress-bar"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ProgressIndicator.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressIndicator.java.md",
+      "componentTags": [
+        "jfx-progress-indicator"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ProgressIndicatorSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressIndicatorSkin.java.md",
+      "componentTags": [
+        "jfx-progress-indicator"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ProgressIndicator.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressIndicator.fxml.md",
+      "componentTags": [
+        "jfx-progress-indicator"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/TextInputControl.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java.md",
+      "componentTags": [
+        "jfx-text-field",
+        "jfx-password-field",
+        "jfx-text-area"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/TextInputControlSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java.md",
+      "componentTags": [
+        "jfx-text-field",
+        "jfx-password-field",
+        "jfx-text-area"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/TextField.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/TextField.java.md",
+      "componentTags": [
+        "jfx-text-field"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/TextFieldSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextFieldSkin.java.md",
+      "componentTags": [
+        "jfx-text-field",
+        "jfx-password-field"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/PasswordField.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/PasswordField.java.md",
+      "componentTags": [
+        "jfx-password-field"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/TextArea.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/TextArea.java.md",
+      "componentTags": [
+        "jfx-text-area"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/TextAreaSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextAreaSkin.java.md",
+      "componentTags": [
+        "jfx-text-area"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Slider.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Slider.java.md",
+      "componentTags": [
+        "jfx-slider"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/SliderSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SliderSkin.java.md",
+      "componentTags": [
+        "jfx-slider"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/SliderH.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderH.fxml.md",
+      "componentTags": [
+        "jfx-slider"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/SliderV.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderV.fxml.md",
+      "componentTags": [
+        "jfx-slider"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ScrollBar.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ScrollBar.java.md",
+      "componentTags": [
+        "jfx-scroll-bar"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ScrollBarSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ScrollBarSkin.java.md",
+      "componentTags": [
+        "jfx-scroll-bar"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ScrollBarH.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarH.fxml.md",
+      "componentTags": [
+        "jfx-scroll-bar"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ScrollBarV.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarV.fxml.md",
+      "componentTags": [
+        "jfx-scroll-bar"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ChoiceBox.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ChoiceBox.java.md",
+      "componentTags": [
+        "jfx-choice-box"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ChoiceBoxSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ChoiceBoxSkin.java.md",
+      "componentTags": [
+        "jfx-choice-box"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ChoiceBox.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ChoiceBox.fxml.md",
+      "componentTags": [
+        "jfx-choice-box"
+      ]
+    },
+    {
+      "kind": "common-source",
+      "cleanPath": "openjfx/controls/ComboBoxBase.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java.md",
+      "componentTags": [
+        "jfx-combo-box",
+        "jfx-date-picker",
+        "jfx-color-picker"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ComboBoxBaseSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java.md",
+      "componentTags": [
+        "jfx-combo-box",
+        "jfx-date-picker",
+        "jfx-color-picker"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ComboBoxPopupControl.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java.md",
+      "componentTags": [
+        "jfx-combo-box",
+        "jfx-date-picker",
+        "jfx-color-picker"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/ComboBox.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBox.java.md",
+      "componentTags": [
+        "jfx-combo-box"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/ComboBoxListViewSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxListViewSkin.java.md",
+      "componentTags": [
+        "jfx-combo-box"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/ComboBox.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ComboBox.fxml.md",
+      "componentTags": [
+        "jfx-combo-box"
+      ]
+    },
+    {
+      "kind": "control-source",
+      "cleanPath": "openjfx/controls/Tooltip.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/Tooltip.java.md",
+      "componentTags": [
+        "jfx-tooltip"
+      ]
+    },
+    {
+      "kind": "skin-source",
+      "cleanPath": "openjfx/skins/TooltipSkin.java",
+      "normalizedPath": "openjdk-jfx/git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TooltipSkin.java.md",
+      "componentTags": [
+        "jfx-tooltip"
+      ]
+    },
+    {
+      "kind": "fixture-source",
+      "cleanPath": "scenebuilder/builtin-fxml/Tooltip.fxml",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Tooltip.fxml.md",
+      "componentTags": [
+        "jfx-tooltip"
+      ]
+    },
+    {
+      "kind": "scenebuilder-metadata",
+      "cleanPath": "scenebuilder/metadata/Metadata.java",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/Metadata.java.md",
+      "componentTags": [
+        "jfx-metadata"
+      ]
+    },
+    {
+      "kind": "scenebuilder-metadata",
+      "cleanPath": "scenebuilder/metadata/ClassMetadata.java",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ClassMetadata.java.md",
+      "componentTags": [
+        "jfx-metadata"
+      ]
+    },
+    {
+      "kind": "scenebuilder-metadata",
+      "cleanPath": "scenebuilder/metadata/ComponentClassMetadata.java",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ComponentClassMetadata.java.md",
+      "componentTags": [
+        "jfx-metadata"
+      ]
+    },
+    {
+      "kind": "scenebuilder-metadata",
+      "cleanPath": "scenebuilder/metadata/PropertyMetadata.java",
+      "normalizedPath": "gluon-scenebuilder/git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/property/PropertyMetadata.java.md",
+      "componentTags": [
+        "jfx-metadata"
+      ]
+    },
+    {
+      "kind": "docs",
+      "cleanPath": "docs/javafx-css-reference.md",
+      "normalizedPath": "javafx-css-reference-26/web-snapshots/openjfx.io-javadoc-26-javafx.graphics-javafx-scene-doc-files-cssref.html-36bb1f847345.html.md",
+      "componentTags": [
+        "jfx-theme-modena",
+        "jfx-css"
+      ]
+    }
+  ]
+}

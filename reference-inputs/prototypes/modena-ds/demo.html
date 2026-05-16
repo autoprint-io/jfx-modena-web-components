@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modena Design System — Proof of Concept</title>
+  <link rel="stylesheet" href="modena-tokens.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: var(--jfx-background);
+      font-family: var(--jfx-font-family);
+      font-size: var(--jfx-font-size);
+      color: var(--jfx-text-bg-color);
+    }
+    h1 {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 0 0 1.5rem;
+      color: var(--jfx-dark-text);
+    }
+    h2 {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: var(--jfx-mid-text);
+      border-bottom: 1px solid var(--jfx-box-border);
+      padding-bottom: 0.3em;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .state-label {
+      display: inline-block;
+      min-width: 7em;
+      font-size: 0.85em;
+      color: #888;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--jfx-box-border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .note {
+      font-size: 0.8em;
+      color: #999;
+      margin-top: 0.5rem;
+    }
+    .swatch-row {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 0.5rem;
+    }
+    .swatch {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 3px;
+      border: 1px solid rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 7px;
+      color: rgba(0,0,0,0.5);
+      padding-bottom: 2px;
+    }
+    .swatch.dark-txt { color: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body>
+
+<h1>Modena Design System — Proof of Concept</h1>
+
+<!-- ─── Color Tokens ─── -->
+<div class="card">
+  <h2 style="margin-top:0">Tokens de color</h2>
+  <div class="swatch-row">
+    <div class="swatch" style="background:#ececec">base</div>
+    <div class="swatch" style="background:#f1f1f1">bg</div>
+    <div class="swatch" style="background:#fbfbfb">inner</div>
+    <div class="swatch dark-txt" style="background:#0096C9">accent</div>
+    <div class="swatch dark-txt" style="background:#039ED3">focus</div>
+    <div class="swatch dark-txt" style="background:#ABD8ED; color:rgba(0,0,0,0.5)">default</div>
+    <div class="swatch dark-txt" style="background:#575757">mark</div>
+    <div class="swatch" style="background:#b6b6b6">border</div>
+  </div>
+  <div class="swatch-row">
+    <div class="swatch" style="background:#eeeeee">body↑</div>
+    <div class="swatch" style="background:#d9d9d9">body↓</div>
+    <div class="swatch" style="background:#f5f5f5">hvr↑</div>
+    <div class="swatch" style="background:#e0e0e0">hvr↓</div>
+    <div class="swatch" style="background:#e1e1e1">prs↑</div>
+    <div class="swatch" style="background:#cccccc">prs↓</div>
+    <div class="swatch" style="background:#acdaef">def↑</div>
+    <div class="swatch" style="background:#9dc7da">def↓</div>
+  </div>
+</div>
+
+<!-- ─── Buttons ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-button</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-button>Botón</jfx-button>
+    <jfx-button>Aceptar</jfx-button>
+    <jfx-button>Cancelar</jfx-button>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Default</span>
+    <jfx-button default>Aceptar</jfx-button>
+    <jfx-button default>Guardar</jfx-button>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-button disabled>No disponible</jfx-button>
+    <jfx-button disabled default>Default disabled</jfx-button>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Focus</span>
+    <jfx-button id="focused-btn">Tab aquí →</jfx-button>
+  </div>
+
+  <p class="note">Hover, active y focus son interactivos — mueve el mouse y usa Tab/Space.</p>
+</div>
+
+<!-- ─── Checkboxes ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-checkbox</h2>
+
+  <div class="row">
+    <span class="state-label">Unchecked</span>
+    <jfx-checkbox>Opción A</jfx-checkbox>
+    <jfx-checkbox>Opción B</jfx-checkbox>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Checked</span>
+    <jfx-checkbox checked>Seleccionado</jfx-checkbox>
+    <jfx-checkbox checked>Activo</jfx-checkbox>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Indeterminate</span>
+    <jfx-checkbox indeterminate>Parcial</jfx-checkbox>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-checkbox disabled>Deshabilitado</jfx-checkbox>
+    <jfx-checkbox disabled checked>Checked disabled</jfx-checkbox>
+  </div>
+
+  <p class="note">Click para alternar estado. Tab/Space para interacción por teclado.</p>
+</div>
+
+<!-- ─── Toggle Buttons ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-toggle-button</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-toggle-button>Negrita</jfx-toggle-button>
+    <jfx-toggle-button>Cursiva</jfx-toggle-button>
+    <jfx-toggle-button selected>Subrayado</jfx-toggle-button>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-toggle-button disabled>Off</jfx-toggle-button>
+    <jfx-toggle-button disabled selected>On</jfx-toggle-button>
+  </div>
+
+  <p class="note">Click para alternar. El estado "selected" tiene apariencia hundida.</p>
+</div>
+
+<!-- ─── Radio Buttons ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-radio-button</h2>
+
+  <div class="row">
+    <span class="state-label">Grupo A</span>
+    <jfx-radio-button name="formato" checked>PDF</jfx-radio-button>
+    <jfx-radio-button name="formato">PNG</jfx-radio-button>
+    <jfx-radio-button name="formato">TIFF</jfx-radio-button>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Grupo B</span>
+    <jfx-radio-button name="calidad" checked>Alta</jfx-radio-button>
+    <jfx-radio-button name="calidad">Media</jfx-radio-button>
+    <jfx-radio-button name="calidad" disabled>Borrador</jfx-radio-button>
+  </div>
+
+  <p class="note">Seleccionar uno deselecciona los demás del mismo grupo (atributo name).</p>
+</div>
+
+<!-- ─── Label ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-label</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-label>Nombre del archivo:</jfx-label>
+    <jfx-label>Estado de la impresora:</jfx-label>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-label disabled>Campo deshabilitado:</jfx-label>
+  </div>
+</div>
+
+<!-- ─── Hyperlink ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-hyperlink</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-hyperlink>Abrir configuración</jfx-hyperlink>
+    <jfx-hyperlink href="https://example.com">Visitar sitio</jfx-hyperlink>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Visited</span>
+    <jfx-hyperlink visited>Enlace visitado</jfx-hyperlink>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-hyperlink disabled>No disponible</jfx-hyperlink>
+  </div>
+
+  <p class="note">Hover subraya. Click marca como visitado. Focus muestra borde punteado azul.</p>
+</div>
+
+<!-- ─── TextField ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-text-field</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-text-field placeholder="Nombre del archivo"></jfx-text-field>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Con valor</span>
+    <jfx-text-field value="banner_evento_2024.pdf"></jfx-text-field>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Readonly</span>
+    <jfx-text-field value="Solo lectura" readonly></jfx-text-field>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-text-field value="Deshabilitado" disabled></jfx-text-field>
+  </div>
+
+  <p class="note">Click para enfocar. Nota la sombra interna sutil en el borde superior.</p>
+</div>
+
+<!-- ─── PasswordField ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-password-field</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-password-field placeholder="Contraseña"></jfx-password-field>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-password-field placeholder="Contraseña" disabled></jfx-password-field>
+  </div>
+</div>
+
+<!-- ─── TextArea ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-text-area</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-text-area placeholder="Notas del trabajo..." rows="3" style="min-width:20em"></jfx-text-area>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Con valor</span>
+    <jfx-text-area rows="3" style="min-width:20em" value="Impresión a 720x1440 dpi&#10;Sustrato: vinilo blanco mate&#10;Acabado: laminado UV"></jfx-text-area>
+  </div>
+
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-text-area rows="2" disabled value="Bloqueado" style="min-width:20em"></jfx-text-area>
+  </div>
+</div>
+
+<!-- ─── Separator ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-separator</h2>
+
+  <div style="margin-bottom:1rem">
+    <jfx-label>Sección superior</jfx-label>
+    <jfx-separator></jfx-separator>
+    <jfx-label>Sección inferior</jfx-label>
+  </div>
+
+  <div class="row" style="height:3em; align-items:stretch">
+    <jfx-button>Izquierda</jfx-button>
+    <jfx-separator orientation="vertical"></jfx-separator>
+    <jfx-button>Derecha</jfx-button>
+  </div>
+</div>
+
+<!-- ─── ProgressBar ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-progress-bar</h2>
+
+  <div class="row">
+    <span class="state-label">0%</span>
+    <jfx-progress-bar value="0" style="flex:1"></jfx-progress-bar>
+  </div>
+  <div class="row">
+    <span class="state-label">25%</span>
+    <jfx-progress-bar value="0.25" style="flex:1"></jfx-progress-bar>
+  </div>
+  <div class="row">
+    <span class="state-label">60%</span>
+    <jfx-progress-bar value="0.6" style="flex:1"></jfx-progress-bar>
+  </div>
+  <div class="row">
+    <span class="state-label">100%</span>
+    <jfx-progress-bar value="1" style="flex:1"></jfx-progress-bar>
+  </div>
+  <div class="row">
+    <span class="state-label">Indeterminate</span>
+    <jfx-progress-bar indeterminate style="flex:1"></jfx-progress-bar>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-progress-bar value="0.4" disabled style="flex:1"></jfx-progress-bar>
+  </div>
+</div>
+
+<!-- ─── ProgressIndicator ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-progress-indicator</h2>
+
+  <div class="row">
+    <span class="state-label">Spinning</span>
+    <jfx-progress-indicator></jfx-progress-indicator>
+  </div>
+  <div class="row">
+    <span class="state-label">25%</span>
+    <jfx-progress-indicator value="0.25"></jfx-progress-indicator>
+    <span class="state-label">50%</span>
+    <jfx-progress-indicator value="0.5"></jfx-progress-indicator>
+    <span class="state-label">75%</span>
+    <jfx-progress-indicator value="0.75"></jfx-progress-indicator>
+    <span class="state-label">100%</span>
+    <jfx-progress-indicator value="1"></jfx-progress-indicator>
+  </div>
+</div>
+
+<!-- ─── Tooltip ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-tooltip</h2>
+
+  <div class="row">
+    <jfx-button id="btn-tip">Hover sobre mí</jfx-button>
+    <jfx-tooltip for="btn-tip">Este botón ejecuta la acción principal</jfx-tooltip>
+
+    <jfx-button id="btn-tip2">Otro botón</jfx-button>
+    <jfx-tooltip for="btn-tip2">Información adicional del control</jfx-tooltip>
+  </div>
+
+  <p class="note">Hover 600ms para ver el tooltip. Estilo: fondo oscuro semi-transparente con sombra.</p>
+</div>
+
+<!-- ─── Slider ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-slider</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-slider value="40" style="flex:1"></jfx-slider>
+  </div>
+  <div class="row">
+    <span class="state-label">0%</span>
+    <jfx-slider value="0" style="flex:1"></jfx-slider>
+  </div>
+  <div class="row">
+    <span class="state-label">100%</span>
+    <jfx-slider value="100" style="flex:1"></jfx-slider>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-slider value="60" disabled style="flex:1"></jfx-slider>
+  </div>
+
+  <p class="note">Arrastrar el thumb. Flechas ← → para ajustar con teclado.</p>
+</div>
+
+<!-- ─── Spinner ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-spinner</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-spinner value="5" min="0" max="20"></jfx-spinner>
+  </div>
+  <div class="row">
+    <span class="state-label">Con paso</span>
+    <jfx-spinner value="100" min="0" max="1200" step="50"></jfx-spinner>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-spinner value="10" disabled></jfx-spinner>
+  </div>
+
+  <p class="note">Click en flechas o ↑ ↓ con teclado. Editar el valor directamente.</p>
+</div>
+
+<!-- ─── ChoiceBox ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-choice-box</h2>
+
+  <div class="row">
+    <span class="state-label">Normal</span>
+    <jfx-choice-box>
+      <option value="pdf">PDF</option>
+      <option value="png">PNG</option>
+      <option value="tiff">TIFF</option>
+      <option value="jpeg">JPEG</option>
+    </jfx-choice-box>
+  </div>
+  <div class="row">
+    <span class="state-label">Preselect</span>
+    <jfx-choice-box value="600">
+      <option value="300">300 dpi</option>
+      <option value="600">600 dpi</option>
+      <option value="1200">1200 dpi</option>
+    </jfx-choice-box>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-choice-box disabled value="pdf">
+      <option value="pdf">PDF</option>
+    </jfx-choice-box>
+  </div>
+
+  <p class="note">Click para abrir. Flechas ↑ ↓ para navegar. Enter/Space para seleccionar.</p>
+</div>
+
+<!-- ─── ComboBox ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-combo-box</h2>
+
+  <div class="row">
+    <span class="state-label">Read-only</span>
+    <jfx-combo-box>
+      <option>Roland TrueVIS VG3</option>
+      <option>HP Latex 700</option>
+      <option>Mimaki JV330</option>
+      <option>Epson SC-S80600</option>
+    </jfx-combo-box>
+  </div>
+  <div class="row">
+    <span class="state-label">Editable</span>
+    <jfx-combo-box editable>
+      <option>Vinilo blanco mate</option>
+      <option>Lona frontlit 440g</option>
+      <option>Papel fotográfico 260g</option>
+      <option>Film transparente</option>
+    </jfx-combo-box>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-combo-box disabled value="Roland TrueVIS VG3">
+      <option>Roland TrueVIS VG3</option>
+    </jfx-combo-box>
+  </div>
+
+  <p class="note">El editable permite escribir para filtrar opciones.</p>
+</div>
+
+<!-- ─── TabPane ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-tab-pane</h2>
+
+  <jfx-tab-pane style="height:8em">
+    <div slot="tab1" label="General" active>
+      <jfx-label>Configuración general del trabajo de impresión.</jfx-label>
+    </div>
+    <div slot="tab2" label="Color">
+      <jfx-label>Perfil ICC y gestión de color.</jfx-label>
+    </div>
+    <div slot="tab3" label="Acabado">
+      <jfx-label>Laminado, corte, plegado.</jfx-label>
+    </div>
+  </jfx-tab-pane>
+</div>
+
+<!-- ─── ScrollBar ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-scroll-bar</h2>
+
+  <div class="row">
+    <span class="state-label">Horizontal</span>
+    <jfx-scroll-bar value="0.3" style="flex:1"></jfx-scroll-bar>
+  </div>
+  <div class="row" style="height:6em">
+    <span class="state-label">Vertical</span>
+    <jfx-scroll-bar orientation="vertical" value="0.5" style="height:100%"></jfx-scroll-bar>
+  </div>
+</div>
+
+<!-- ─── ScrollPane ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-scroll-pane</h2>
+
+  <jfx-scroll-pane style="height:6em; width:100%">
+    <div style="padding:0.5em">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+  </jfx-scroll-pane>
+</div>
+
+<!-- ─── Pagination ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-pagination</h2>
+
+  <div class="row">
+    <jfx-pagination page-count="8" current-page="2"></jfx-pagination>
+  </div>
+
+  <p class="note">Click en números o flechas. ← → con teclado.</p>
+</div>
+
+<!-- ─── TitledPane ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-titled-pane</h2>
+
+  <jfx-titled-pane expanded>
+    <span slot="title">Configuración general</span>
+    <div>
+      <jfx-label>Aquí va el contenido del panel expandido.</jfx-label>
+      <div class="row" style="margin-top:0.5rem">
+        <jfx-checkbox checked>Opción activa</jfx-checkbox>
+      </div>
+    </div>
+  </jfx-titled-pane>
+
+  <jfx-titled-pane style="margin-top:0.5rem">
+    <span slot="title">Opciones avanzadas</span>
+    <jfx-label>Contenido colapsado por defecto.</jfx-label>
+  </jfx-titled-pane>
+</div>
+
+<!-- ─── Accordion ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-accordion</h2>
+
+  <jfx-accordion>
+    <jfx-titled-pane expanded>
+      <span slot="title">Sustrato</span>
+      <jfx-label>Vinilo blanco mate 80μ</jfx-label>
+    </jfx-titled-pane>
+    <jfx-titled-pane>
+      <span slot="title">Perfil de color</span>
+      <jfx-label>sRGB → Roland ECO-UV</jfx-label>
+    </jfx-titled-pane>
+    <jfx-titled-pane>
+      <span slot="title">Acabado</span>
+      <jfx-label>Laminado mate + corte de contorno</jfx-label>
+    </jfx-titled-pane>
+  </jfx-accordion>
+</div>
+
+<!-- ─── SplitPane ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-split-pane</h2>
+
+  <jfx-split-pane style="height:6em">
+    <div slot="left" style="padding:0.5em; background:var(--jfx-background)">
+      <jfx-label>Panel izquierdo</jfx-label>
+    </div>
+    <div slot="right" style="padding:0.5em; background:var(--jfx-control-inner-bg)">
+      <jfx-label>Panel derecho</jfx-label>
+    </div>
+  </jfx-split-pane>
+
+  <jfx-split-pane orientation="vertical" style="height:8em; margin-top:0.75rem">
+    <div slot="left" style="padding:0.5em; background:var(--jfx-background)">
+      <jfx-label>Panel superior</jfx-label>
+    </div>
+    <div slot="right" style="padding:0.5em; background:var(--jfx-control-inner-bg)">
+      <jfx-label>Panel inferior</jfx-label>
+    </div>
+  </jfx-split-pane>
+
+  <p class="note">Arrastrar el divisor para redimensionar.</p>
+</div>
+
+<!-- ─── Dialog ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-dialog</h2>
+
+  <div class="row">
+    <jfx-button id="btn-info" onclick="document.getElementById('dlg-info').show()">Info</jfx-button>
+    <jfx-button id="btn-warn" onclick="document.getElementById('dlg-warn').show()">Warning</jfx-button>
+    <jfx-button id="btn-err" onclick="document.getElementById('dlg-error').show()">Error</jfx-button>
+    <jfx-button id="btn-confirm" onclick="document.getElementById('dlg-confirm').show()">Confirm</jfx-button>
+  </div>
+
+  <jfx-dialog id="dlg-info" type="info" header>
+    <span slot="header">Información</span>
+    El trabajo se envió correctamente a la cola de impresión.
+    <jfx-button slot="buttons" default onclick="this.closest('jfx-dialog').close()">Aceptar</jfx-button>
+  </jfx-dialog>
+
+  <jfx-dialog id="dlg-warn" type="warning" header>
+    <span slot="header">Advertencia</span>
+    El perfil ICC seleccionado no es compatible con este sustrato.
+    <jfx-button slot="buttons" onclick="this.closest('jfx-dialog').close()">Cancelar</jfx-button>
+    <jfx-button slot="buttons" default onclick="this.closest('jfx-dialog').close()">Continuar</jfx-button>
+  </jfx-dialog>
+
+  <jfx-dialog id="dlg-error" type="error" header>
+    <span slot="header">Error</span>
+    No se pudo conectar con la impresora. Verifique la conexión USB.
+    <jfx-button slot="buttons" default onclick="this.closest('jfx-dialog').close()">Cerrar</jfx-button>
+  </jfx-dialog>
+
+  <jfx-dialog id="dlg-confirm" type="confirmation" header>
+    <span slot="header">Confirmar</span>
+    ¿Desea eliminar este trabajo de la cola?
+    <jfx-button slot="buttons" onclick="this.closest('jfx-dialog').close()">No</jfx-button>
+    <jfx-button slot="buttons" default onclick="this.closest('jfx-dialog').close()">Sí</jfx-button>
+  </jfx-dialog>
+
+  <p class="note">Click en los botones para abrir cada tipo de diálogo. Esc o click fuera para cerrar.</p>
+</div>
+
+<!-- ─── ListView ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-list-view</h2>
+
+  <div class="row">
+    <jfx-list-view style="width:15em">
+      <option>Roland TrueVIS VG3-640</option>
+      <option>HP Latex 700W</option>
+      <option>Mimaki JV330-160</option>
+      <option>Epson SC-S80600L</option>
+      <option>Canon Colorado 1650</option>
+      <option>Mutoh ValueJet 1638UH</option>
+    </jfx-list-view>
+  </div>
+
+  <p class="note">Click para seleccionar. ↑ ↓ con teclado. Focus = selección azul.</p>
+</div>
+
+<!-- ─── TreeView ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-tree-view</h2>
+
+  <jfx-tree-view style="width:18em">
+    <jfx-tree-item label="Trabajos" expanded>
+      <jfx-tree-item label="En cola">
+        <jfx-tree-item label="Banner_evento.pdf"></jfx-tree-item>
+        <jfx-tree-item label="Cartel_A1.tiff"></jfx-tree-item>
+      </jfx-tree-item>
+      <jfx-tree-item label="Completados">
+        <jfx-tree-item label="Vinilo_fachada.pdf"></jfx-tree-item>
+        <jfx-tree-item label="Roll-up_stand.pdf"></jfx-tree-item>
+        <jfx-tree-item label="Lona_exterior.pdf"></jfx-tree-item>
+      </jfx-tree-item>
+      <jfx-tree-item label="Errores">
+        <jfx-tree-item label="Archivo_corrupto.ai"></jfx-tree-item>
+      </jfx-tree-item>
+    </jfx-tree-item>
+  </jfx-tree-view>
+
+  <p class="note">Click en ▶ para expandir/colapsar. Click en nodo para seleccionar.</p>
+</div>
+
+<!-- ─── TableView ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-table-view</h2>
+
+  <jfx-table-view style="height:10em">
+    <jfx-table-column label="Archivo" field="file" width="40%"></jfx-table-column>
+    <jfx-table-column label="Sustrato" field="substrate" width="25%"></jfx-table-column>
+    <jfx-table-column label="DPI" field="dpi" width="15%"></jfx-table-column>
+    <jfx-table-column label="Estado" field="status" width="20%"></jfx-table-column>
+
+    <jfx-table-row file="Banner_evento.pdf" substrate="Vinilo mate" dpi="720" status="En cola"></jfx-table-row>
+    <jfx-table-row file="Cartel_A1.tiff" substrate="Papel foto 260g" dpi="1440" status="Imprimiendo"></jfx-table-row>
+    <jfx-table-row file="Roll-up.pdf" substrate="Lona 440g" dpi="720" status="Completado"></jfx-table-row>
+    <jfx-table-row file="Vinilo_fachada.pdf" substrate="Vinilo fundido" dpi="600" status="En cola"></jfx-table-row>
+    <jfx-table-row file="Lona_exterior.pdf" substrate="Lona backlit" dpi="360" status="Completado"></jfx-table-row>
+    <jfx-table-row file="Poster_indoor.tiff" substrate="Papel satinado" dpi="1440" status="Error"></jfx-table-row>
+  </jfx-table-view>
+
+  <p class="note">Click en cabecera para ordenar. Click en fila para seleccionar. ↑ ↓ con teclado.</p>
+</div>
+
+<!-- ─── MenuBar + Menu ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-menu-bar + jfx-menu + jfx-menu-item</h2>
+
+  <jfx-menu-bar>
+    <jfx-menu>
+      <span slot="label">Archivo</span>
+      <jfx-menu-item>Nuevo trabajo<span slot="shortcut">Ctrl+N</span></jfx-menu-item>
+      <jfx-menu-item>Abrir...<span slot="shortcut">Ctrl+O</span></jfx-menu-item>
+      <jfx-menu-item>Guardar<span slot="shortcut">Ctrl+S</span></jfx-menu-item>
+      <jfx-menu-item separator></jfx-menu-item>
+      <jfx-menu-item>Exportar PDF</jfx-menu-item>
+      <jfx-menu-item separator></jfx-menu-item>
+      <jfx-menu-item>Salir</jfx-menu-item>
+    </jfx-menu>
+    <jfx-menu>
+      <span slot="label">Editar</span>
+      <jfx-menu-item>Deshacer<span slot="shortcut">Ctrl+Z</span></jfx-menu-item>
+      <jfx-menu-item>Rehacer<span slot="shortcut">Ctrl+Y</span></jfx-menu-item>
+      <jfx-menu-item separator></jfx-menu-item>
+      <jfx-menu-item>Copiar<span slot="shortcut">Ctrl+C</span></jfx-menu-item>
+      <jfx-menu-item>Pegar<span slot="shortcut">Ctrl+V</span></jfx-menu-item>
+    </jfx-menu>
+    <jfx-menu>
+      <span slot="label">Ver</span>
+      <jfx-menu-item checkable checked>Barra de herramientas</jfx-menu-item>
+      <jfx-menu-item checkable checked>Panel lateral</jfx-menu-item>
+      <jfx-menu-item checkable>Reglas</jfx-menu-item>
+      <jfx-menu-item separator></jfx-menu-item>
+      <jfx-menu-item>Zoom in<span slot="shortcut">Ctrl++</span></jfx-menu-item>
+      <jfx-menu-item>Zoom out<span slot="shortcut">Ctrl+-</span></jfx-menu-item>
+    </jfx-menu>
+  </jfx-menu-bar>
+
+  <p class="note">Click en menú para abrir. Items con ✓ son checkable (click para alternar).</p>
+</div>
+
+<!-- ─── ContextMenu ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-context-menu</h2>
+
+  <div id="ctx-target" style="padding:2em; background:var(--jfx-control-inner-bg); border:1px dashed var(--jfx-box-border); border-radius:3px; text-align:center; color:var(--jfx-prompt-text)">
+    Click derecho aquí para ver el menú contextual
+  </div>
+
+  <jfx-context-menu for="ctx-target">
+    <jfx-menu-item>Cortar<span slot="shortcut">Ctrl+X</span></jfx-menu-item>
+    <jfx-menu-item>Copiar<span slot="shortcut">Ctrl+C</span></jfx-menu-item>
+    <jfx-menu-item>Pegar<span slot="shortcut">Ctrl+V</span></jfx-menu-item>
+    <jfx-menu-item separator></jfx-menu-item>
+    <jfx-menu-item>Eliminar</jfx-menu-item>
+    <jfx-menu-item separator></jfx-menu-item>
+    <jfx-menu-item>Propiedades</jfx-menu-item>
+  </jfx-context-menu>
+</div>
+
+<!-- ─── DatePicker ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-date-picker</h2>
+
+  <div class="row">
+    <span class="state-label">Con valor</span>
+    <jfx-date-picker value="2026-05-15"></jfx-date-picker>
+  </div>
+  <div class="row">
+    <span class="state-label">Vacío</span>
+    <jfx-date-picker></jfx-date-picker>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-date-picker value="2026-01-01" disabled></jfx-date-picker>
+  </div>
+
+  <p class="note">Click en el icono de calendario para abrir. Seleccionar día cierra el popup.</p>
+</div>
+
+<!-- ─── ColorPicker ─── -->
+<div class="card">
+  <h2 style="margin-top:0">jfx-color-picker</h2>
+
+  <div class="row">
+    <span class="state-label">Seleccionado</span>
+    <jfx-color-picker value="#0096C9"></jfx-color-picker>
+  </div>
+  <div class="row">
+    <span class="state-label">Rojo</span>
+    <jfx-color-picker value="#ff0000"></jfx-color-picker>
+  </div>
+  <div class="row">
+    <span class="state-label">Disabled</span>
+    <jfx-color-picker value="#33cc00" disabled></jfx-color-picker>
+  </div>
+
+  <p class="note">Click para abrir paleta. Hover amplía el color. Input hex para color personalizado.</p>
+</div>
+
+<!-- ─── Combined example ─── -->
+<div class="card">
+  <h2 style="margin-top:0">Ejemplo combinado — Configuración de trabajo</h2>
+  <div class="row" style="gap: 0.5rem">
+    <jfx-label style="min-width:8em">Nombre:</jfx-label>
+    <jfx-text-field value="Banner Evento 2024" style="flex:1"></jfx-text-field>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 0.5rem">
+    <jfx-label style="min-width:8em">Contraseña RIP:</jfx-label>
+    <jfx-password-field placeholder="••••••" style="flex:1"></jfx-password-field>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 0.5rem">
+    <jfx-label style="min-width:8em">Formato:</jfx-label>
+    <jfx-radio-button name="fmt2" checked>PDF</jfx-radio-button>
+    <jfx-radio-button name="fmt2">PNG</jfx-radio-button>
+    <jfx-radio-button name="fmt2">TIFF</jfx-radio-button>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 0.5rem">
+    <jfx-label style="min-width:8em">Resolución:</jfx-label>
+    <jfx-toggle-button selected>300 dpi</jfx-toggle-button>
+    <jfx-toggle-button>600 dpi</jfx-toggle-button>
+    <jfx-toggle-button>1200 dpi</jfx-toggle-button>
+  </div>
+  <div class="row" style="gap: 1rem; margin-top: 0.75rem">
+    <jfx-checkbox checked>Incluir marcas de corte</jfx-checkbox>
+    <jfx-checkbox>Espejo horizontal</jfx-checkbox>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 0.5rem">
+    <jfx-label style="min-width:8em">Notas:</jfx-label>
+    <jfx-text-area placeholder="Instrucciones especiales..." rows="2" style="flex:1"></jfx-text-area>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 0.5rem">
+    <jfx-hyperlink>Más opciones...</jfx-hyperlink>
+  </div>
+  <div class="row" style="gap: 0.5rem; margin-top: 1rem">
+    <jfx-button disabled>Anterior</jfx-button>
+    <jfx-button>Cancelar</jfx-button>
+    <jfx-button default>Imprimir</jfx-button>
+  </div>
+</div>
+
+<script type="module" src="components/index.js"></script>
+</body>
+</html>

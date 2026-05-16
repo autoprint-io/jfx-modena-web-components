@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/codex-component-profile.schema.json",
+  "title": "Codex component profile",
+  "description": "Generated or overridden profile that constrains Codex prompts and edits for one jfx-* component.",
+  "type": "object",
+  "required": [
+    "component",
+    "category",
+    "workflow",
+    "status",
+    "certificationStatus",
+    "directory",
+    "allowedFiles",
+    "sourceAuthority",
+    "riskFlags",
+    "overrideApplied"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "category": { "type": "string", "minLength": 1 },
+    "workflow": {
+      "type": "string",
+      "enum": [
+        "chart-component",
+        "choice-component",
+        "container-component",
+        "content-component",
+        "control-component",
+        "data-component",
+        "media-component",
+        "menu-component",
+        "misc-component",
+        "shape-component",
+        "text-input-component",
+        "generic-component"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["scaffold_only", "implemented_partial"]
+    },
+    "certificationStatus": { "type": "string", "minLength": 1 },
+    "directory": { "type": "string", "minLength": 1 },
+    "allowedFiles": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "sourceAuthority": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "riskFlags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "popup_surface",
+          "overlay_positioning",
+          "virtualization",
+          "selection_model",
+          "editable_text",
+          "form_associated",
+          "canvas_or_graphics",
+          "media_or_webview",
+          "complex_keyboard",
+          "data_binding",
+          "chart_rendering"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "overrideApplied": { "type": "boolean" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

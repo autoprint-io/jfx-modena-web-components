@@ -1,0 +1,36 @@
+{
+  "name": "@autoprint/jfx-modena-web-components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.29.3",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "codex:audit-component": "node --experimental-strip-types tools/codex/run-component-audit.ts",
+    "codex:component-context": "node --experimental-strip-types tools/codex/collect-component-context.ts",
+    "codex:component-profile": "node --experimental-strip-types tools/codex/collect-component-profile.ts",
+    "compute:tokens": "node --experimental-strip-types tools/compute-tokens.ts",
+    "extract:clean-sources": "node --experimental-strip-types tools/extract-clean-sources.ts",
+    "generate:component-manifests": "node --experimental-strip-types tools/generate-component-manifests.ts",
+    "report:components": "node --experimental-strip-types tools/reports/generate-component-report.ts",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "typecheck:tools": "tsc --noEmit -p tsconfig.json",
+    "validate:component-manifests": "node --experimental-strip-types tools/validators/validate-component-manifests.ts",
+    "validate:component-profiles": "node --experimental-strip-types tools/validators/validate-component-profiles.ts",
+    "validate:component-sources": "node --experimental-strip-types tools/validators/validate-component-sources.ts",
+    "validate:component-status": "node --experimental-strip-types tools/validators/validate-component-status.ts",
+    "validate:components": "npm run validate:component-manifests && npm run validate:component-sources && npm run validate:component-status && npm run validate:component-profiles",
+    "verify": "pnpm typecheck && npm run typecheck:tools && pnpm build && npm run compute:tokens && npm run generate:component-manifests && npm run validate:components && npm run extract:clean-sources -- --dry-run",
+    "viewer:dev": "pnpm --filter @autoprint/jfx-modena-viewer dev"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  }
+}

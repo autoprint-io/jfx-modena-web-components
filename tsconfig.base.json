@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "paths": {
+      "@autoprint/jfx-modena-components": ["./packages/components/src/index.ts"],
+      "@autoprint/jfx-modena-design-system": ["./packages/design-system/src/index.ts"],
+      "@autoprint/jfx-modena-runtime": ["./packages/runtime/src/index.ts"],
+      "@autoprint/jfx-modena-testing": ["./packages/testing/src/index.ts"]
+    },
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "skipLibCheck": true
+  }
+}

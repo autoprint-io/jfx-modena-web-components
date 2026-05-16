@@ -1,0 +1,890 @@
+{
+  "generatedAt": "2026-05-16T05:54:21.848Z",
+  "allowlistPath": "tools/clean-source-allowlist.json",
+  "normalizedRoot": "reference-inputs/normalized",
+  "outputRoot": "reference-sources",
+  "sourceCount": 72,
+  "missingCount": 0,
+  "components": {
+    "jfx-theme-modena": [
+      {
+        "kind": "modena-css",
+        "cleanPath": "openjfx/modena/modena.css",
+        "sourcePath": "git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena.css",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena.css",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d371ee7eb573c0ef6f455942f69bc351409aec0ee61221303e3f782ce248df71"
+      },
+      {
+        "kind": "modena-css",
+        "cleanPath": "openjfx/modena/touch.css",
+        "sourcePath": "git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/touch.css",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/touch.css",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "49c15cc9d9026705ded3ab2cca7b770af946606e2a4379f988e195508b05dcf1"
+      },
+      {
+        "kind": "modena-css",
+        "cleanPath": "openjfx/modena/two-level-focus.css",
+        "sourcePath": "git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/two-level-focus.css",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/two-level-focus.css",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "eb82ddf9b1e5ebcce1e16aa74bc8fdff12bbb5ae32cd9a5c0d4f46d9c78c0665"
+      },
+      {
+        "kind": "modena-css",
+        "cleanPath": "openjfx/modena/modena-no-transparency.css",
+        "sourcePath": "git/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena-no-transparency.css",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/resources/com/sun/javafx/scene/control/skin/modena/modena-no-transparency.css",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "85d9e84ce696ed9a5ac99b7761d2c384286c300417bc08a5ad1b2412f019e0a2"
+      },
+      {
+        "kind": "docs",
+        "cleanPath": "docs/javafx-css-reference.md",
+        "sourcePath": "web-snapshots/openjfx.io-javadoc-26-javafx.graphics-javafx-scene-doc-files-cssref.html-36bb1f847345.html",
+        "sourceUrl": "https://openjfx.io/javadoc/26/javafx.graphics/javafx/scene/doc-files/cssref.html",
+        "sourceCommit": null,
+        "license": "Oracle/OpenJFX documentation terms",
+        "cleanSha256": "63206a841374097ae82ccc8008282102a6f5cb8facaa41e3560b562560baa591"
+      }
+    ],
+    "jfx-common": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/scene/Node.java",
+        "sourcePath": "git/modules/javafx.graphics/src/main/java/javafx/scene/Node.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.graphics/src/main/java/javafx/scene/Node.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "8426effc249fecce5ae1234da267ae93a31f2cff6c11893706c4834582dec199"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/scene/Parent.java",
+        "sourcePath": "git/modules/javafx.graphics/src/main/java/javafx/scene/Parent.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.graphics/src/main/java/javafx/scene/Parent.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "587d424c0e651aa67501b82a5dc72a3889804e87cc0a0680056f474a2d0f8a14"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/layout/Region.java",
+        "sourcePath": "git/modules/javafx.graphics/src/main/java/javafx/scene/layout/Region.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.graphics/src/main/java/javafx/scene/layout/Region.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "09456aa54237adffc9ede5888142b22c2fc2b9e5b1a253c33a8ca79d9db551f0"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Control.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Control.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Control.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "b4ee227484ecb2f6414c8e2790b7b42e93cbd4d49f0d88cb43d550b3163d6080"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Skin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Skin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Skin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "ac5921010f867cfaeeb3a292aa7df7b510ae31835b3728666f44872ced767579"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/SkinBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/SkinBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/SkinBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "ef5465844efba65da90c9f059ceb8c66efeb1807f98efe3f2a55b0b01f7ef6c2"
+      }
+    ],
+    "jfx-region": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/layout/Region.java",
+        "sourcePath": "git/modules/javafx.graphics/src/main/java/javafx/scene/layout/Region.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.graphics/src/main/java/javafx/scene/layout/Region.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "09456aa54237adffc9ede5888142b22c2fc2b9e5b1a253c33a8ca79d9db551f0"
+      }
+    ],
+    "jfx-button": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ButtonBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d1a8c73912e4dcd3261bb5a498741f8566c01b2385d67fd58bd2d1aaa8b4493c"
+      },
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Labeled.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d16518d376891d7e0a82c8a414ad6f860ada2db73fb4d91585b8f92160afb262"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Button.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Button.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Button.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "34c7756a4fa3c7a0d9921a57d56cc150f0a0c753e14f0ca730d0127a1ad8729e"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ButtonSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ButtonSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ButtonSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "3a7ee644732cc1f2420bcb54a26b80084e2476a006a31e107f277294cec6cea4"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/Button.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Button.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Button.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "dea878f49801d39955bb38acb8924826d26e84dca7588fb4c1f423390a6e70da"
+      }
+    ],
+    "jfx-toggle-button": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ButtonBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d1a8c73912e4dcd3261bb5a498741f8566c01b2385d67fd58bd2d1aaa8b4493c"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ToggleButton.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ToggleButton.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ToggleButton.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "bcd89a7627f86a6423596f51e4f575bda018e4df561ab1edf425699a5c2e6dfc"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ToggleButtonSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ToggleButtonSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ToggleButtonSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "c4aff985e03e9959d49072ddbb076f18a32bfebe69921d7c9fcf1b467c6e527c"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ToggleButton.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ToggleButton.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ToggleButton.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "f58a529cd11f37dceae17300d45ffd9ee4b1b8b6d94f8f6c185177f1eecd63de"
+      }
+    ],
+    "jfx-menu-button": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ButtonBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d1a8c73912e4dcd3261bb5a498741f8566c01b2385d67fd58bd2d1aaa8b4493c"
+      }
+    ],
+    "jfx-split-menu-button": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ButtonBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ButtonBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d1a8c73912e4dcd3261bb5a498741f8566c01b2385d67fd58bd2d1aaa8b4493c"
+      }
+    ],
+    "jfx-label": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Labeled.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d16518d376891d7e0a82c8a414ad6f860ada2db73fb4d91585b8f92160afb262"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Label.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Label.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Label.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "647cc7da0d3b2721b5895ff3f763aece986865cd2f9eb994511ca3582e86ebcb"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/LabelSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/LabelSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/LabelSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "90c72d8ec3b16ec196d0dff2d0fc23d421ad20f57c2ce5e367d489b7232d83f5"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/Label.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Label.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Label.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "28c4c4eb52721144e587bcd8cf4592575a297511797cfbd3e7c26d42be34ae50"
+      }
+    ],
+    "jfx-checkbox": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Labeled.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d16518d376891d7e0a82c8a414ad6f860ada2db73fb4d91585b8f92160afb262"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/CheckBox.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/CheckBox.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/CheckBox.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "719f91b0a87b5b74803757dfeef3dffbede8115407d6bf133986ad447813d957"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/CheckBoxSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/CheckBoxSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/CheckBoxSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "df53d77253d0ad8e0bc81e0de8bef6286a011bb24f4a581d475275180e5c5fb9"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/CheckBox.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/CheckBox.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/CheckBox.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "64172cf07e44787c4409681b7f0e8bf7425ed2885b1809031ec176dc2aaa2807"
+      }
+    ],
+    "jfx-radio-button": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Labeled.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d16518d376891d7e0a82c8a414ad6f860ada2db73fb4d91585b8f92160afb262"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/RadioButton.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/RadioButton.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/RadioButton.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d1e367bd4cd8b9764e3f2bcc30a01b96c025edfe8da34ee6a606a0e64322294a"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/RadioButtonSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/RadioButtonSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/RadioButtonSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "fb8285ae91ee71b076040de64e105ca1968724f3b18a34a64948b057d168db8f"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/RadioButton.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/RadioButton.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/RadioButton.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "719a0e2be06c86756e93a675f7b1b855d3ea73ddb86f2f3e77967cf282bcf11b"
+      }
+    ],
+    "jfx-hyperlink": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/Labeled.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Labeled.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d16518d376891d7e0a82c8a414ad6f860ada2db73fb4d91585b8f92160afb262"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Hyperlink.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Hyperlink.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Hyperlink.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "2ecc4ddf0bbcdc9dea45ec8b925ce8fb3814b628ab30b13d4ee6dea5949891b9"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/HyperlinkSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/HyperlinkSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/HyperlinkSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "cfd4a8b9405bb0b15b454dc5b18dc674f2870cef34591bac1493bf17e73b48e6"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/Hyperlink.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Hyperlink.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Hyperlink.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "46b92feb4205d388822ac3949e0efe764a8216fa369919b46b2d08621a05ac6e"
+      }
+    ],
+    "jfx-separator": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Separator.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Separator.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Separator.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d937626f8cf1c6ed024a87bf39d4cb9a2be248d34b0b354c1fe8c957656266c6"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/SeparatorSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SeparatorSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SeparatorSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "907e727e58e434f92556fcfcea3bf4d64d896e10ef2ecc62fcd19d0550a5d22b"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/SeparatorH.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorH.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorH.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "8b8052348fc9f9a78c26df91f08560aa13ea994a88948836e9350b349f8c42ca"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/SeparatorV.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorV.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SeparatorV.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "7ca461ba7421211076e81323de9906f48044ca622be64f2c67c3c85f431cf263"
+      }
+    ],
+    "jfx-progress-bar": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ProgressBar.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressBar.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressBar.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "656e52659a34f3c868eda5c1681942925aa13eed6bcc8377300710ec6466bb4f"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ProgressBarSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressBarSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressBarSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "be0c9b13a85d7336f6ae472bf7a21cf89546063840b3bcfcb19c6d60396d6305"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ProgressBar.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressBar.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressBar.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "b439ba342a197c1ed9e7c49a74edbd843d01929189843bae7844f5ad7f77a13b"
+      }
+    ],
+    "jfx-progress-indicator": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ProgressIndicator.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressIndicator.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ProgressIndicator.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "8f7b5b6b8dfaf40f322eeacc23a1611547f97f15c4c488105de9f31399d83fa6"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ProgressIndicatorSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressIndicatorSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ProgressIndicatorSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "09422a58c109455af4480f86ab9638c69a661f97906994b621cd0f2f6a11a454"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ProgressIndicator.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressIndicator.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ProgressIndicator.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "8ee281511c84dba67b5b0d4c3ead0e2b32984f2612bb4ab303dab30b19bc79da"
+      }
+    ],
+    "jfx-text-field": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/TextInputControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "cddeb3b8ceca04cb1b95fdd677ea51695b591b9d67a53c590dbdcc6dc7f15f1c"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextInputControlSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "917215ef9f6233f7fbc934bcccfd7d5b3e23024e9eef2c9b9e7a5b402beb5dd4"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/TextField.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/TextField.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/TextField.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "373cf459a903054a65416a69de35cdf3eaeac8d7a3fe285a6a7ae46b48baf55a"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextFieldSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextFieldSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextFieldSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d846d20c598696e87f27f0efeafa55eccd3f9149c518aea2ba37f550cc65e23a"
+      }
+    ],
+    "jfx-password-field": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/TextInputControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "cddeb3b8ceca04cb1b95fdd677ea51695b591b9d67a53c590dbdcc6dc7f15f1c"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextInputControlSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "917215ef9f6233f7fbc934bcccfd7d5b3e23024e9eef2c9b9e7a5b402beb5dd4"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextFieldSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextFieldSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextFieldSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d846d20c598696e87f27f0efeafa55eccd3f9149c518aea2ba37f550cc65e23a"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/PasswordField.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/PasswordField.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/PasswordField.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "6220087f1a668aa01cc2e742510064966af6b5dad5bd8bd060c62fedc39436c7"
+      }
+    ],
+    "jfx-text-area": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/TextInputControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/TextInputControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "cddeb3b8ceca04cb1b95fdd677ea51695b591b9d67a53c590dbdcc6dc7f15f1c"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextInputControlSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextInputControlSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "917215ef9f6233f7fbc934bcccfd7d5b3e23024e9eef2c9b9e7a5b402beb5dd4"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/TextArea.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/TextArea.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/TextArea.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "678d66677f5e65c45c9352eae949649a5029ec1d3a0a5639a1644904445f7530"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TextAreaSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextAreaSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TextAreaSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "7874ba4e34b637ca447790123ede7e4dabfc0f327eabeb004e391b892ff896cd"
+      }
+    ],
+    "jfx-slider": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Slider.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Slider.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Slider.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "f20feede7722fd39e7e64b5279f72c3893b564e24965e4135f2a581fd921f555"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/SliderSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SliderSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/SliderSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "56f0088de732544a46f08f34b524d3776abbdf9ccd703e31768f89dac4f31fed"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/SliderH.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderH.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderH.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "c3ddd167f1b9af5988f733744599d11566fc3926353e747d0f8b279fa4c0eaf5"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/SliderV.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderV.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/SliderV.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "aaba426a79416935b0b5645d8f2f2ed1e91f2978c7ad581cd65c3611d61f78c1"
+      }
+    ],
+    "jfx-scroll-bar": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ScrollBar.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ScrollBar.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ScrollBar.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "bacc68eab7f2cf9235bc73fa61b9c3ab2b5e2dbf19f0b2c88dc2690d399523f2"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ScrollBarSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ScrollBarSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ScrollBarSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "8dbde7c2082d455b4b69947c188ca32e969a7560545889b69c5ffd705f029a65"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ScrollBarH.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarH.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarH.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "21de6aabf83ee2c7c7e424eee98324fb18e9e2ce7d43fbd4810bb142d621e873"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ScrollBarV.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarV.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ScrollBarV.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "b02937da9ecdd7ba2a4b0a1ac59f08c14a04f08b6b21a40ebf951d9614845b87"
+      }
+    ],
+    "jfx-choice-box": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ChoiceBox.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ChoiceBox.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ChoiceBox.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "de8e45f799a03ac1ca3a300fab2f094d77fef543d83b4e09bd882be8fc5b75c8"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ChoiceBoxSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ChoiceBoxSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ChoiceBoxSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "d5397577cd626819e7088f0164910fa28cb1cdc595b5a9cce33131d898220359"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ChoiceBox.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ChoiceBox.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ChoiceBox.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "cbe14bb26afbb7ba5517bc54e7bdd51991cf3a77bf30789adca4a9d451bd622a"
+      }
+    ],
+    "jfx-combo-box": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ComboBoxBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "e6d75244df3a61a9d0461667302b0dda0c24e3d01e3298cb3d26cced634272a5"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxBaseSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "67afe3a9fcf84638c61ade0ad60aa8770ca5d836b4e015e73e6b7f93c913eac0"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxPopupControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "39074340937d7c5f576f2f6a966d5848e7d4383c7fc5e149843b081482ce2545"
+      },
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/ComboBox.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBox.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBox.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "c29227b6efda433bfb13c66830b8dac7c165f7bb9bfcc4b5eef93de9a74e45a8"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxListViewSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxListViewSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxListViewSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "f43bf453a4980de018dff90cca3e02bb5f364931591caf12d6c93010740bba74"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/ComboBox.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ComboBox.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/ComboBox.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "e31aab657410fddaa17daa4afb870bf059bc2525047a63c4feff88b1d1b3e3e1"
+      }
+    ],
+    "jfx-date-picker": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ComboBoxBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "e6d75244df3a61a9d0461667302b0dda0c24e3d01e3298cb3d26cced634272a5"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxBaseSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "67afe3a9fcf84638c61ade0ad60aa8770ca5d836b4e015e73e6b7f93c913eac0"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxPopupControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "39074340937d7c5f576f2f6a966d5848e7d4383c7fc5e149843b081482ce2545"
+      }
+    ],
+    "jfx-color-picker": [
+      {
+        "kind": "common-source",
+        "cleanPath": "openjfx/controls/ComboBoxBase.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/ComboBoxBase.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "e6d75244df3a61a9d0461667302b0dda0c24e3d01e3298cb3d26cced634272a5"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxBaseSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxBaseSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "67afe3a9fcf84638c61ade0ad60aa8770ca5d836b4e015e73e6b7f93c913eac0"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/ComboBoxPopupControl.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/ComboBoxPopupControl.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "39074340937d7c5f576f2f6a966d5848e7d4383c7fc5e149843b081482ce2545"
+      }
+    ],
+    "jfx-tooltip": [
+      {
+        "kind": "control-source",
+        "cleanPath": "openjfx/controls/Tooltip.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/Tooltip.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/Tooltip.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "408177a9b1469d5b78aa3fa82e398e3e9bc8e8c72a0ba11f1660e80a3eae7c78"
+      },
+      {
+        "kind": "skin-source",
+        "cleanPath": "openjfx/skins/TooltipSkin.java",
+        "sourcePath": "git/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TooltipSkin.java",
+        "sourceUrl": "https://github.com/openjdk/jfx.git/blob/277aec13d0879718a9ac2231402e19eed6f70d20/modules/javafx.controls/src/main/java/javafx/scene/control/skin/TooltipSkin.java",
+        "sourceCommit": "277aec13d0879718a9ac2231402e19eed6f70d20",
+        "license": "GPL-2.0-only with Classpath Exception",
+        "cleanSha256": "519e87b41c981fe0a2c98619d939e5ea7dc98c07d918d114095e81fa4a011bb6"
+      },
+      {
+        "kind": "fixture-source",
+        "cleanPath": "scenebuilder/builtin-fxml/Tooltip.fxml",
+        "sourcePath": "git/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Tooltip.fxml",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/resources/com/oracle/javafx/scenebuilder/kit/library/builtin/Tooltip.fxml",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "d1890d9dac6d3f5d77feff14e3ccd30f77a0554aa560ed3be728837043d9bfbf"
+      }
+    ],
+    "jfx-metadata": [
+      {
+        "kind": "scenebuilder-metadata",
+        "cleanPath": "scenebuilder/metadata/Metadata.java",
+        "sourcePath": "git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/Metadata.java",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/Metadata.java",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "ae1de1cc7ce006def2c3cd9aca1b2cb0b1c8b7a75bbaabcd0a32ea3d7fa78c65"
+      },
+      {
+        "kind": "scenebuilder-metadata",
+        "cleanPath": "scenebuilder/metadata/ClassMetadata.java",
+        "sourcePath": "git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ClassMetadata.java",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ClassMetadata.java",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "bddf09dce1da56e791e78f6fa6a1cbfb2c2df32c1fb4031e959b93065eaa081f"
+      },
+      {
+        "kind": "scenebuilder-metadata",
+        "cleanPath": "scenebuilder/metadata/ComponentClassMetadata.java",
+        "sourcePath": "git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ComponentClassMetadata.java",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/klass/ComponentClassMetadata.java",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "c42e9f1bc9f89c69218cdbba01789fbb15dfa5402086cd4eb126fac33abdab11"
+      },
+      {
+        "kind": "scenebuilder-metadata",
+        "cleanPath": "scenebuilder/metadata/PropertyMetadata.java",
+        "sourcePath": "git/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/property/PropertyMetadata.java",
+        "sourceUrl": "https://github.com/gluonhq/scenebuilder.git/blob/f3194d6f8089789549c105f112f3bc6836eec55a/kit/src/main/java/com/oracle/javafx/scenebuilder/kit/metadata/property/PropertyMetadata.java",
+        "sourceCommit": "f3194d6f8089789549c105f112f3bc6836eec55a",
+        "license": "BSD-3-Clause",
+        "cleanSha256": "2d6559a860d5eb053e92028f2ecfcb86f81aac64e9bd58c3f4320951b63204b6"
+      }
+    ],
+    "jfx-css": [
+      {
+        "kind": "docs",
+        "cleanPath": "docs/javafx-css-reference.md",
+        "sourcePath": "web-snapshots/openjfx.io-javadoc-26-javafx.graphics-javafx-scene-doc-files-cssref.html-36bb1f847345.html",
+        "sourceUrl": "https://openjfx.io/javadoc/26/javafx.graphics/javafx/scene/doc-files/cssref.html",
+        "sourceCommit": null,
+        "license": "Oracle/OpenJFX documentation terms",
+        "cleanSha256": "63206a841374097ae82ccc8008282102a6f5cb8facaa41e3560b562560baa591"
+      }
+    ]
+  }
+}

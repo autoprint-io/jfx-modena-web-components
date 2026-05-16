@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoprint.io/schemas/jfx-modena/component-manifest.schema.json",
+  "title": "JFX Modena component manifest",
+  "description": "Manifest metadata for a single jfx-* component. Empty objects are allowed only for scaffold-only components during the bootstrap phase.",
+  "anyOf": [
+    {
+      "type": "object",
+      "maxProperties": 0
+    },
+    {
+      "type": "object",
+      "required": ["tagName", "javafxClass", "javafxStyleClass", "status", "attributes", "parts", "states"],
+      "additionalProperties": false,
+      "properties": {
+        "tagName": {
+          "type": "string",
+          "pattern": "^jfx-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "javafxClass": {
+          "type": "string",
+          "minLength": 1
+        },
+        "javafxStyleClass": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["scaffold_only", "implemented_partial"]
+        },
+        "attributes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "parts": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "states": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    }
+  ]
+}

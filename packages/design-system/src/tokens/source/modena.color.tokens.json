@@ -1,0 +1,38 @@
+{
+  "modena": {
+    "color": {
+      "base": {
+        "$type": "color",
+        "$value": "#ececec"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "#0096c9"
+      },
+      "defaultButton": {
+        "$type": "color",
+        "$value": "#abd8ed"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "#039ed3"
+      },
+      "faintFocus": {
+        "$type": "color",
+        "$value": "#039ed322"
+      },
+      "darkText": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "midText": {
+        "$type": "color",
+        "$value": "#333333"
+      },
+      "lightText": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    }
+  }
+}

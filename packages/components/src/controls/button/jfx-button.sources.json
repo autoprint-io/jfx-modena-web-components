@@ -1,0 +1,10 @@
+{
+  "tagName": "jfx-button",
+  "sources": [
+    "reference-sources/openjfx/modena/modena.css",
+    "reference-sources/openjfx/controls/Button.java",
+    "reference-sources/openjfx/controls/ButtonBase.java",
+    "reference-sources/openjfx/skins/ButtonSkin.java",
+    "reference-sources/scenebuilder/builtin-fxml/Button.fxml"
+  ]
+}
