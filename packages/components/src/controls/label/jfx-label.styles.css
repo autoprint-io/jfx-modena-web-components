@@ -1,0 +1,31 @@
+:host {
+  box-sizing: border-box;
+  display: inline-flex;
+  vertical-align: middle;
+  font-family: var(--jfx-font-family, "Segoe UI", "SF Pro Text", system-ui, sans-serif);
+  font-size: var(--jfx-font-size, 12px);
+  color: var(--jfx-text-background-color, #333333);
+  cursor: default;
+  pointer-events: none;
+}
+
+.label {
+  color: var(--jfx-text-background-color, #333333);
+  font: inherit;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+:host([wrap-text]) .label {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+:host([underline]) .label,
+.mnemonic {
+  text-decoration: underline;
+}
+
+:host([disabled]) {
+  opacity: 0.4;
+}

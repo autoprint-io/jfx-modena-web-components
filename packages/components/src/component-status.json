@@ -4,8 +4,8 @@
   "counts": {
     "total": 84,
     "byStatus": {
-      "implemented_partial": 1,
-      "scaffold_only": 83
+      "implemented_partial": 2,
+      "scaffold_only": 82
     },
     "byCategory": {
       "containers": 19,
@@ -502,8 +502,8 @@
       "tagName": "jfx-label",
       "category": "controls",
       "directory": "packages/components/src/controls/label",
-      "componentStatus": "scaffold_only",
-      "certificationStatus": "missing_implementation",
+      "componentStatus": "implemented_partial",
+      "certificationStatus": "not_certified_behavior_visual_a11y_incomplete",
       "files": {
         "component": "packages/components/src/controls/label/jfx-label.ts",
         "template": "packages/components/src/controls/label/jfx-label.template.ts",

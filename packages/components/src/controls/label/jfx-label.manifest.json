@@ -1,1 +1,25 @@
-{}
+{
+  "tagName": "jfx-label",
+  "javafxClass": "javafx.scene.control.Label",
+  "javafxStyleClass": "label",
+  "status": "implemented_partial",
+  "attributes": [
+    "disabled",
+    "label-for",
+    "show-mnemonics",
+    "text",
+    "underline",
+    "wrap-text"
+  ],
+  "parts": [
+    "label",
+    "mnemonic",
+    "text"
+  ],
+  "states": [
+    "disabled",
+    "show-mnemonics",
+    "underline",
+    "wrap-text"
+  ]
+}
